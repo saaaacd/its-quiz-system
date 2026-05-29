@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS 線上測驗系統</title>
+    <meta name="description" content="ITS 國際認證程式測驗練習平台">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand">ITS 線上測驗系統</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">
+                        <span class="nav-icon">🏠</span> Home
+                    </a>
+                    <a href="#exams" class="nav-link">
+                        <span class="nav-icon">📋</span> Exams
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">📊</span> Status
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">🏆</span> Rank
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">ℹ️</span> About
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="btn-outline" id="btn-login">Login</button>
+                <button class="btn-primary-sm" id="btn-register">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-container">
+        <!-- Active Exams Section -->
+        <section class="panel" id="exams">
+            <div class="panel-header">
+                <h2 class="panel-title">考試列表</h2>
+                <button class="btn-refresh" onclick="location.reload()">Refresh</button>
+            </div>
+            <div class="exam-list" id="exam-list">
+                <!-- Injected by home.js -->
+            </div>
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Injected by home.js -->
+            </div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section class="panel">
+            <div class="panel-header">
+                <h2 class="panel-title">Announcements</h2>
+                <button class="btn-refresh" onclick="location.reload()">Refresh</button>
+            </div>
+            <div class="announcement-list">
+                <div class="announcement-row">
+                    <span class="announcement-text">歡迎使用 ITS 線上測驗練習系統！</span>
+                    <span class="announcement-date">2026-5-30 01:00:00</span>
+                    <span class="announcement-author">By admin</span>
+                </div>
+                <div class="announcement-row">
+                    <span class="announcement-text">新增 Python 模擬考第一回，歡迎練習。</span>
+                    <span class="announcement-date">2026-5-29 18:00:00</span>
+                    <span class="announcement-author">By admin</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Mode Selection Modal -->
+    <div id="mode-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2 class="modal-title">選擇作答模式</h2>
+            <p class="modal-desc">請選擇您想要進行測驗的方式：</p>
+            <div class="mode-options">
+                <button class="mode-btn" onclick="startExamWithMode('exam')">
+                    <div class="mode-icon">🏆</div>
+                    <div class="mode-text">
+                        <h3>測驗模式</h3>
+                        <p>完成所有題目後統一交卷，最後才會公佈成績與解答。</p>
+                    </div>
+                </button>
+                <button class="mode-btn" onclick="startExamWithMode('practice')">
+                    <div class="mode-icon">🎯</div>
+                    <div class="mode-text">
+                        <h3>練習模式</h3>
+                        <p>每一題作答完都可以馬上檢查對錯並觀看解析。</p>
+                    </div>
+                </button>
+            </div>
+            <button class="btn-outline modal-close" onclick="closeModeModal()" style="margin-top: 20px; width: 100%;">取消</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 LLY. All rights reserved.</p>
+        <p>Powered by <a href="#">ITS Practice</a></p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

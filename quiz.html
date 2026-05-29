@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測驗進行中 — ITS 程式測驗練習</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container" id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <h1 class="question-title" id="header-title">題目 <span id="current-question-num">1</span> / <span id="total-questions">2</span></h1>
+            </div>
+            <div class="header-right">
+                <div class="timer">
+                    <span class="timer-icon">⏳</span>
+                    剩餘時間 <span id="time-display">00:14:34</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area (Dynamic) -->
+        <main class="main-content" id="question-container">
+            <!-- Question content will be injected here by app.js -->
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-left">
+                <button class="btn-text" id="btn-overview">到考試進度表</button>
+                <button class="btn-text" id="btn-flag">標記為待檢查</button>
+                <button class="btn-text">標記為回饋意見</button>
+                <button class="btn-text">工具 ▼</button>
+            </div>
+            <div class="footer-right">
+                <button class="btn-nav" id="btn-prev">上一題</button>
+                <button class="btn-nav primary" id="btn-next">下一題</button>
+                <button class="btn-nav primary submit-btn" id="btn-check" style="display: none;">檢查答案</button>
+                <button class="btn-nav primary submit-btn" id="btn-submit" style="display: none;">交卷</button>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Results Screen Template -->
+    <template id="tpl-results">
+        <div class="results-container">
+            <h2>測驗完成</h2>
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="final-score">0</span>%
+                </div>
+            </div>
+            <div class="results-summary">
+                <p>答對題數：<span id="correct-count">0</span> / <span id="total-count">0</span></p>
+            </div>
+            <div class="results-details" id="results-details">
+                <!-- Details injected here -->
+            </div>
+            <div class="results-actions">
+                <a href="index.html" class="btn-nav" id="btn-back-home">回到首頁</a>
+                <button class="btn-nav primary" id="btn-restart">重新測驗</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
