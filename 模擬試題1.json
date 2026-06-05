@@ -95,7 +95,7 @@
       "big_question_id": "EXAM1-004",
       "big_question_number": 4,
       "big_question_title": "你在建立一個 Java 主控台應用程式，必須定義應用程式啟動時所執行的第一個方法的簽章，請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "____A____ main( ____B____ )\n{\n    System.out.print(\"Java 學習網\");\n}",
+      "shared_code_context": "① main( ② )\n{\n    System.out.print(\"Java 學習網\");\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -334,7 +334,7 @@
       "big_question_id": "EXAM1-009",
       "big_question_number": 9,
       "big_question_title": "你在建立一個 Java 主控台應用程式，會讀取使用者所輸入的日期。請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "import ____A____\npublic class DateReader{\n    public static String getDate(){\n        System.out.println(\"輸入就職日期格式為 MMDDYYYY\");\n        ____B____\n        String firstDate = ____C____;\n        ____D____;\n        return firstDate;\n    }\n}",
+      "shared_code_context": "import ①\npublic class DateReader{\n    public static String getDate(){\n        System.out.println(\"輸入就職日期格式為 MMDDYYYY\");\n        ②\n        String firstDate = ③;\n        ④;\n        return firstDate;\n    }\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -427,7 +427,7 @@
       "big_question_id": "EXAM1-011",
       "big_question_number": 11,
       "big_question_title": "你在撰寫一個 Java 程式，此程式必須執行下列工作：將 userName 截斷只留下前五個字元；將 outStr 設定為包含 userName 及 userName 中字元數的字串。請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "public static void main(String[] args){\n    String userName = \"Javacoffee\";\n    userName = userName.____A____\n    String outStr = String.format(\"____B____ 字串有 ____C____ 個字元\", userName, userName.____D____);\n    System.out.println(outStr);\n}",
+      "shared_code_context": "public static void main(String[] args){\n    String userName = \"Javacoffee\";\n    userName = userName.①\n    String outStr = String.format(\"② 字串有 ③ 個字元\", userName, userName.④);\n    System.out.println(outStr);\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -484,7 +484,7 @@
       "big_question_id": "EXAM1-012",
       "big_question_number": 12,
       "big_question_title": "你要使用初始值來宣告 2X3 的 int 資料型別陣列。請選擇適當的程式碼片段來完成程式碼。每個程式碼片段可能只使用一次，也可能使用多次，甚至完全不用。",
-      "shared_code_context": "int[][] array = ____A____ 72, 34, 56 ____B____ 28, 145, 26 ____C____",
+      "shared_code_context": "int[][] array = ① 72, 34, 56 ② 28, 145, 26 ③",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -597,7 +597,7 @@
       "big_question_id": "EXAM1-014",
       "big_question_number": 14,
       "big_question_title": "你在撰寫一個 Java 方法，此方法要能執行下列工作：可接受一個 double 陣列；會傳回陣列中的最大值。請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "public double getMax( ____A____ ){\n    ____B____\n    for (int i=1; i< ____C____ i++)\n        if( ____D____ )\n            ____E____\n    return max;\n}",
+      "shared_code_context": "public double getMax( ① ){\n    ②\n    for (int i=1; i< ③ i++)\n        if( ④ )\n            ⑤\n    return max;\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -664,7 +664,7 @@
       "big_question_id": "EXAM1-015",
       "big_question_number": 15,
       "big_question_title": "你要建立 if 陳述式，在同時滿足下列兩項條件時，該陳述式會判定為 true：total 大於或等於 num；nt 小於 num。請選擇適當的運算子填入對應的正確位置。",
-      "shared_code_context": "if (num ____A____ total ____B____ nt ____C____ num)",
+      "shared_code_context": "if (num ① total ② nt ③ num)",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -766,7 +766,7 @@
       "big_question_id": "EXAM1-017",
       "big_question_number": 17,
       "big_question_title": "你在撰寫一個 Java 程式，使用 countPrice 方法計算美術館的入場費(price)。基本票價為 100.00 元。加入會員需要花費 400.00 元。此方法必須符合規則：會員可享基本票價的三折優惠；65 歲以上的會員可免入場費；非會員可以基本票價購買，或在同一次交易中一起購買會員資格(joinMember)及打折票券；isMember 變數可指定對象是否為會員。請從下列選項中選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "double countPrice(boolean isMember, int ages, boolean joinMember){\n    double price;\n    if (isMember){\n        ____A____\n        price = 0.0;\n        }\n        ____B____\n        price = 30.0;\n        }\n    }\n    ____C____\n    price = 430.0;\n    }\n    ____D____\n    price = 130.0;\n    }\n    return price;\n}",
+      "shared_code_context": "double countPrice(boolean isMember, int ages, boolean joinMember){\n    double price;\n    if (isMember){\n        ①\n        price = 0.0;\n        }\n        ②\n        price = 30.0;\n        }\n    }\n    ③\n    price = 430.0;\n    }\n    ④\n    price = 130.0;\n    }\n    return price;\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -823,7 +823,7 @@
       "big_question_id": "EXAM1-018",
       "big_question_number": 18,
       "big_question_title": "你為銀行撰寫管理信用帳戶開立的 Java 程式，若要開立新帳戶，該對象必須符合以下任一要求：超過 65 歲(ages)以上，且年收入(income)最低為 1,000,000 元；至少 21 歲，且年收入高於 2,500,000 元。請選擇適當的運算子填入對應的正確位置，來完成程式碼。",
-      "shared_code_context": "if (ages ____A____ 65 ____B____ income ____C____ 1000000 ____D____\n    ages ____E____ 21 ____F____ income ____G____ 2500000) {\n    System.out.println(\"通過\");\n} else {\n    System.out.println(\"未通過\");\n}",
+      "shared_code_context": "if (ages ① 65 ② income ③ 1000000 ④\n    ages ⑤ 21 ⑥ income ⑦ 2500000) {\n    System.out.println(\"通過\");\n} else {\n    System.out.println(\"未通過\");\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -958,7 +958,7 @@
       "big_question_id": "EXAM1-019",
       "big_question_number": 19,
       "big_question_title": "你在撰寫一個 Java 方法，此方法要能執行下列工作：接受名稱為 ages 的 int 參數；若 ages 為 65 或以上，則指定為「老人」分類(kind)；若 ages 為 20 或以上，但低於 65，則指定為「成人」分類；否則指定為「青年」分類。請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "public static String ageClassification(int age){\n    String kind;\n    ____A____\n    kind = \"老人\";\n    ____B____\n    kind = \"成人\";\n    ____C____\n    kind = \"青年\";\n    return kind;\n}",
+      "shared_code_context": "public static String ageClassification(int age){\n    String kind;\n    ①\n    kind = \"老人\";\n    ②\n    kind = \"成人\";\n    ③\n    kind = \"青年\";\n    return kind;\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -1006,7 +1006,7 @@
       "big_question_id": "EXAM1-020",
       "big_question_number": 20,
       "big_question_title": "您在撰寫一個 Java 的 countdown 方法，此方法必須執行下列工作：接受名稱為 num 的 int 參數；顯示從 num 遞減一到零的所有數字。請選取正確的程式碼片段來完成程式碼。",
-      "shared_code_context": "public static void countdown(int num){\n    for ( ____A____ ____B____ ____C____ ) {\n        System.out.println(i);\n    }\n}",
+      "shared_code_context": "public static void countdown(int num){\n    for ( ① ② ③ ) {\n        System.out.println(i);\n    }\n}",
       "sub_questions": [
         {
           "sub_question_number": 1,
