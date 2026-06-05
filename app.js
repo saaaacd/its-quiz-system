@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let highlightedOriginal = highlightJava(escapeHtml(originalCode));
             
             if (refactoredCode !== null) {
-                let highlightedRefactored = highlightJava(escapeHtml(refactoredCode));
+                let processedRefactored = refactoredCode;
                 if (isFillInBlank) {
                     page.subQuestions.forEach((sq, i) => {
                         let blankHtml = '';
@@ -146,7 +146,23 @@ document.addEventListener('DOMContentLoaded', () => {
                             blankHtml = `<select class="inline-select" data-qid="${sq.id}">${optionsHtml}</select>`;
                         }
                         const regex = new RegExp(`_*${circleNumbers[i]}_*`, 'g');
-                        highlightedRefactored = highlightedRefactored.replace(regex, blankHtml);
+                        processedRefactored = processedRefactored.replace(regex, `__BLANK_${i}__`);
+                    });
+                }
+                let highlightedRefactored = highlightJava(escapeHtml(processedRefactored));
+                if (isFillInBlank) {
+                    page.subQuestions.forEach((sq, i) => {
+                        let blankHtml = '';
+                        if (isDragDrop) {
+                            blankHtml = `<span class="drop-zone" data-qid="${sq.id}"><span class="drop-text">請拖曳至此</span></span>`;
+                        } else {
+                            let optionsHtml = `<option value="" disabled selected>請選擇...</option>`;
+                            Object.entries(sq.options).forEach(([key, val]) => {
+                                optionsHtml += `<option value="${key}">${escapeHtml(val)}</option>`;
+                            });
+                            blankHtml = `<select class="inline-select" data-qid="${sq.id}">${optionsHtml}</select>`;
+                        }
+                        highlightedRefactored = highlightedRefactored.replace(`__BLANK_${i}__`, blankHtml);
                     });
                 }
                 
@@ -162,6 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             } else {
                 if (isFillInBlank) {
+                    // Replace blanks with placeholders BEFORE escaping/highlighting
+                    let processedCode = originalCode;
+                    page.subQuestions.forEach((sq, i) => {
+                        const regex = new RegExp(`_*${circleNumbers[i]}_*`, 'g');
+                        processedCode = processedCode.replace(regex, `__BLANK_${i}__`);
+                    });
+                    let highlightedCode = highlightJava(escapeHtml(processedCode));
+                    // Now replace placeholders with actual dropdown/dropzone HTML
                     page.subQuestions.forEach((sq, i) => {
                         let blankHtml = '';
                         if (isDragDrop) {
@@ -173,21 +197,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             });
                             blankHtml = `<select class="inline-select" data-qid="${sq.id}">${optionsHtml}</select>`;
                         }
-                        const regex = new RegExp(`_*${circleNumbers[i]}_*`, 'g');
-                        highlightedOriginal = highlightedOriginal.replace(regex, blankHtml);
+                        highlightedCode = highlightedCode.replace(`__BLANK_${i}__`, blankHtml);
                     });
-                }
-                
-                let blockHtml = `
-                    <div class="code-viewer" style="margin-bottom: 20px;">
-                        <pre class="line-numbers"><code>${highlightedOriginal}</code></pre>
-                    </div>
-                `;
-                
-                if (isFillInBlank) {
-                    targetCodeForBlanks = blockHtml;
+                    
+                    targetCodeForBlanks = `
+                        <div class="code-viewer" style="margin-bottom: 20px;">
+                            <pre class="line-numbers"><code>${highlightedCode}</code></pre>
+                        </div>
+                    `;
                 } else {
-                    codeHtml = blockHtml;
+                    codeHtml = `
+                        <div class="code-viewer" style="margin-bottom: 20px;">
+                            <pre class="line-numbers"><code>${highlightedOriginal}</code></pre>
+                        </div>
+                    `;
                 }
             }
         }
