@@ -552,9 +552,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span style="font-size: 13px; padding: 2px 8px; border-radius: 4px; background: ${isCorrect ? '#ecfdf5' : '#fef2f2'}; color: ${isCorrect ? '#059669' : '#dc2626'};">${isCorrect ? '答對了' : '答錯了'}</span>
                     </div>
                     <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--border-color);">
-                        您的答案：<span style="font-family: var(--font-mono); font-weight: 500; color: var(--text-primary);">${userAns}</span>
+                        您的答案：<span style="font-family: var(--font-mono); font-weight: 500; color: var(--text-primary);">${userAns !== '(未作答)' ? escapeHtml(sq.options[userAns] || userAns) : '(未作答)'}</span>
                         <span style="margin: 0 12px; color: var(--border-color);">|</span>
-                        正確答案：<span style="font-family: var(--font-mono); font-weight: 500; color: var(--text-primary);">${correctAns}</span>
+                        正確答案：<span style="font-family: var(--font-mono); font-weight: 500; color: var(--text-primary);">${escapeHtml(sq.options[correctAns] || correctAns)}</span>
                     </div>
                     <div style="font-size: 14px; color: var(--text-primary); line-height: 1.5;">
                         <span style="color: var(--text-secondary); font-weight: 500; margin-right: 4px;">解析：</span>
