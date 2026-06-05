@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'ch10': '第十章',
         'ch11': '第十一章',
         'ch12': '第十二章',
+        'exam1': '模擬試題1',
     };
 
     const chapterKey = chapterMap[examId];
@@ -489,6 +490,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const correctAns = sq.answer;
             const normalizeAns = (a) => a.split(',').map(s => s.trim()).sort().join(',');
             const isCorrect = userAns !== '(未作答)' && normalizeAns(userAns) === normalizeAns(correctAns);
+
+            // Highlight inline-select dropdowns
+            const selectEl = questionContainer.querySelector(`select[data-qid="${sq.id}"]`);
+            if (selectEl) {
+                selectEl.style.border = `2px solid ${isCorrect ? '#10b981' : '#ef4444'}`;
+                selectEl.style.borderRadius = '4px';
+                if (!isCorrect) {
+                    // Show correct answer label next to dropdown
+                    const correctLabel = document.createElement('span');
+                    correctLabel.className = 'correct-answer-label';
+                    correctLabel.style.cssText = 'margin-left: 8px; font-size: 12px; color: #059669; font-weight: 600; font-family: var(--font-mono); background: #ecfdf5; padding: 2px 6px; border-radius: 3px; border: 1px solid #a7f3d0;';
+                    const correctOptionText = sq.options[correctAns] || correctAns;
+                    correctLabel.textContent = `正確：(${correctAns}) ${correctOptionText}`;
+                    selectEl.parentNode.insertBefore(correctLabel, selectEl.nextSibling);
+                }
+            }
+
+            // Highlight drop zones
+            const dropZone = questionContainer.querySelector(`.drop-zone[data-qid="${sq.id}"]`);
+            if (dropZone) {
+                dropZone.style.border = `2px solid ${isCorrect ? '#10b981' : '#ef4444'}`;
+                dropZone.style.borderRadius = '4px';
+                if (!isCorrect) {
+                    const correctLabel = document.createElement('span');
+                    correctLabel.className = 'correct-answer-label';
+                    correctLabel.style.cssText = 'margin-left: 8px; font-size: 12px; color: #059669; font-weight: 600; font-family: var(--font-mono); background: #ecfdf5; padding: 2px 6px; border-radius: 3px; border: 1px solid #a7f3d0; white-space: nowrap;';
+                    const correctOptionText = sq.options[correctAns] || correctAns;
+                    correctLabel.textContent = `正確：(${correctAns}) ${correctOptionText}`;
+                    dropZone.parentNode.insertBefore(correctLabel, dropZone.nextSibling);
+                }
+            }
             
             feedbackHtml += `
                 <div class="feedback-item" style="margin-bottom: 16px; padding: 16px; border-radius: 4px; background: var(--bg-white); border: 1px solid var(--border-color); border-left: 4px solid ${isCorrect ? '#10b981' : '#ef4444'}; box-shadow: var(--shadow-sm);">

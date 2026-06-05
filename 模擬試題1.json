@@ -1,0 +1,1874 @@
+{
+  "question_bank": "考古題庫1",
+  "version": "考古題庫1_json",
+  "total_big_questions": 40,
+  "total_sub_questions": 114,
+  "big_questions": [
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-001",
+      "big_question_number": 1,
+      "big_question_title": "Java 程式碼中的註解，下列何者為正確語法？",
+      "shared_code_context": "",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "請選出正確的註解語法。",
+          "options": {
+            "①": "// 這是註解文字",
+            "②": "#這是註解文字",
+            "③": "\\這是註解文字",
+            "④": "*/這是註解文字"
+          },
+          "answer": "①",
+          "notes": "Java 單行註解使用 //。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-002",
+      "big_question_number": 2,
+      "big_question_title": "你需要使用最少的記憶體來儲存 3,200,000,000(32億) 數值，應該使用下列哪種資料型別？",
+      "shared_code_context": "",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "請選出正確資料型別。",
+          "options": {
+            "①": "byte",
+            "②": "int",
+            "③": "short",
+            "④": "long"
+          },
+          "answer": "④",
+          "notes": "3,200,000,000 超過 int 範圍，需使用 long。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-003",
+      "big_question_number": 3,
+      "big_question_title": "你正在參加 Java 程式開發人員的面試，必須證明您熟識 main 方法。對於下列關於 main 方法的敘述，請選取[O]或[X]。",
+      "shared_code_context": "",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. main 方法的 args 參數是 String 資料類別的陣列。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. Java 應用程式只能接受一個命令列引數。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. main 方法必須為靜態，因為執行時不會將類別中的物件實體化。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-004",
+      "big_question_number": 4,
+      "big_question_title": "你在建立一個 Java 主控台應用程式，必須定義應用程式啟動時所執行的第一個方法的簽章，請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "____A____ main( ____B____ )\n{\n    System.out.print(\"Java 學習網\");\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "private void",
+            "②": "public static void",
+            "③": "private static String",
+            "④": "public String"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "int args[]",
+            "②": "int args",
+            "③": "String args[]",
+            "④": "String arg"
+          },
+          "answer": "③",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-005",
+      "big_question_number": 5,
+      "big_question_title": "請選擇適當值作為下列程式碼片段的值。每個值可能使用一次或多次，甚至完全不用。",
+      "shared_code_context": "A. (3 + 2) * 4 - 1",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 的值為何？",
+          "options": {
+            "①": "0",
+            "②": "1",
+            "③": "2",
+            "④": "3",
+            "⑤": "16",
+            "⑥": "19",
+            "⑦": "26",
+            "⑧": "80",
+            "⑨": "90"
+          },
+          "answer": "⑥",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 的值為何？",
+          "options": {
+            "①": "0",
+            "②": "1",
+            "③": "2",
+            "④": "3",
+            "⑤": "16",
+            "⑥": "19",
+            "⑦": "26",
+            "⑧": "80",
+            "⑨": "90"
+          },
+          "answer": "⑦",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 的值為何？",
+          "options": {
+            "①": "0",
+            "②": "1",
+            "③": "2",
+            "④": "3",
+            "⑤": "16",
+            "⑥": "19",
+            "⑦": "26",
+            "⑧": "80",
+            "⑨": "90"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 的值為何？",
+          "options": {
+            "①": "0",
+            "②": "1",
+            "③": "2",
+            "④": "3",
+            "⑤": "16",
+            "⑥": "19",
+            "⑦": "26",
+            "⑧": "80",
+            "⑨": "90"
+          },
+          "answer": "③",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-006",
+      "big_question_number": 6,
+      "big_question_title": "請審視下列程式碼片段。（行號僅供參考）請選取正確的選項來回答問題。",
+      "shared_code_context": "01 byte num=127;\n02 num++;\n03 System.out.println(num);\n04 System.out.println(1.0 / 3.0);\n05 System.out.println(1.0f / 3.0f);\n06 System.out.println(1 / 3);",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 第 03 行的輸出為何？",
+          "options": {
+            "①": "-128",
+            "②": "128"
+          },
+          "answer": "①",
+          "notes": "byte 127 再加 1 會溢位成 -128。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 第 04 行的輸出為何？",
+          "options": {
+            "①": "0.33333334",
+            "②": "0.3333333333333333"
+          },
+          "answer": "②",
+          "notes": "double 除法輸出較高精度。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 第 05 行的輸出為何？",
+          "options": {
+            "①": "0.33333334",
+            "②": "0.3333333333333333"
+          },
+          "answer": "①",
+          "notes": "float 除法精度較低。"
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D. 第 06 行的輸出為何？",
+          "options": {
+            "①": "0.33333334",
+            "②": "0"
+          },
+          "answer": "②",
+          "notes": "整數除法 1/3 結果為 0。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-007",
+      "big_question_number": 7,
+      "big_question_title": "請審視下列程式碼片段，請選取正確的選項來完成下列題目。",
+      "shared_code_context": "double num1=255.255;\nint num2=(int)num1;\nbyte num3=(byte)num2;",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. num2 的值為何？",
+          "options": {
+            "①": "255.255",
+            "②": "255.3",
+            "③": "255",
+            "④": "256"
+          },
+          "answer": "③",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. num3 的值為何？",
+          "options": {
+            "①": "11111111",
+            "②": "-1",
+            "③": "255",
+            "④": "256"
+          },
+          "answer": "②",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-008",
+      "big_question_number": 8,
+      "big_question_title": "請審視下列 Java 程式碼。（行號僅供參考）請選取正確的選項來回答問題。",
+      "shared_code_context": "01 public static void main(String[] args) {\n02     int a = 5;\n03     int b = 7;\n04     String num1 = \"a+b=\" + a + b;\n05     System.out.println(num1);\n06     String num2 = \"a+b=\" + (a + b);\n07     System.out.println(num2);\n08 }",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 第 05 行的輸出為何？",
+          "options": {
+            "①": "a+b=57",
+            "②": "a+b=ab",
+            "③": "a+b=12",
+            "④": "12"
+          },
+          "answer": "①",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 第 07 行的輸出為何？",
+          "options": {
+            "①": "a+b=12",
+            "②": "a+b=ab",
+            "③": "a+b=57",
+            "④": "57"
+          },
+          "answer": "①",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-009",
+      "big_question_number": 9,
+      "big_question_title": "你在建立一個 Java 主控台應用程式，會讀取使用者所輸入的日期。請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "import ____A____\npublic class DateReader{\n    public static String getDate(){\n        System.out.println(\"輸入就職日期格式為 MMDDYYYY\");\n        ____B____\n        String firstDate = ____C____;\n        ____D____;\n        return firstDate;\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "java.io.*",
+            "②": "java.util.Scanner"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "InputStream stream = System.in",
+            "②": "Scanner sc = new Scanner(System.in)"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "sc.wait()",
+            "②": "sc.next()",
+            "③": "sc.mark(8)",
+            "④": "stream.read()"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 空格應填入何者？",
+          "options": {
+            "①": "sc.wait()",
+            "②": "sc.close()",
+            "③": "stream.wait()",
+            "④": "stream.close()"
+          },
+          "answer": "②",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-010",
+      "big_question_number": 10,
+      "big_question_title": "請審視下列程式碼片段。（行號僅供參考）請選取正確的選項來回答問題。",
+      "shared_code_context": "01 int x = 5;\n02 int y = 10;\n03 int z = ++x * y--;\n04 int n = x-- + ++y;\n05 System.out.println(z);\n06 System.out.println(n);",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 第 05 行的輸出為何？",
+          "options": {
+            "①": "15",
+            "②": "40",
+            "③": "50",
+            "④": "54",
+            "⑤": "60"
+          },
+          "answer": "⑤",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 第 06 行的輸出為何？",
+          "options": {
+            "①": "11",
+            "②": "13",
+            "③": "15",
+            "④": "16"
+          },
+          "answer": "④",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-011",
+      "big_question_number": 11,
+      "big_question_title": "你在撰寫一個 Java 程式，此程式必須執行下列工作：將 userName 截斷只留下前五個字元；將 outStr 設定為包含 userName 及 userName 中字元數的字串。請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "public static void main(String[] args){\n    String userName = \"Javacoffee\";\n    userName = userName.____A____\n    String outStr = String.format(\"____B____ 字串有 ____C____ 個字元\", userName, userName.____D____);\n    System.out.println(outStr);\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "substring(0, 5);",
+            "②": "subSequence(5, 0);",
+            "③": "substring(5);"
+          },
+          "answer": "①",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "%n",
+            "②": "%d",
+            "③": "%s"
+          },
+          "answer": "③",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "%f",
+            "②": "%d",
+            "③": "%c"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 空格應填入何者？",
+          "options": {
+            "①": "count()",
+            "②": "length()",
+            "③": "chars()"
+          },
+          "answer": "②",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-012",
+      "big_question_number": 12,
+      "big_question_title": "你要使用初始值來宣告 2X3 的 int 資料型別陣列。請選擇適當的程式碼片段來完成程式碼。每個程式碼片段可能只使用一次，也可能使用多次，甚至完全不用。",
+      "shared_code_context": "int[][] array = ____A____ 72, 34, 56 ____B____ 28, 145, 26 ____C____",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "[[",
+            "②": "]]",
+            "③": "][",
+            "④": "{{",
+            "⑤": "}};",
+            "⑥": "}{",
+            "⑦": "},{",
+            "⑧": "],["
+          },
+          "answer": "④",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "[[",
+            "②": "]]",
+            "③": "][",
+            "④": "{{",
+            "⑤": "}};",
+            "⑥": "}{",
+            "⑦": "},{",
+            "⑧": "],["
+          },
+          "answer": "⑦",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "[[",
+            "②": "]]",
+            "③": "][",
+            "④": "{{",
+            "⑤": "}};",
+            "⑥": "}{",
+            "⑦": "},{",
+            "⑧": "],["
+          },
+          "answer": "⑤",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-013",
+      "big_question_number": 13,
+      "big_question_title": "你在撰寫一個方法來變更遊戲中玩家的點數，請評估下列程式碼。下列敘述是否正確，請填入[O]或[X]。",
+      "shared_code_context": "01 public class GamePoint {\n02   static int extra = 300;\n03   public static int changePoint(int point, Boolean bonus, int extra){\n04     if(bonus == true){\n05       point += extra;\n06     }\n07     return point;\n08   }\n10   public static void main(String[] args){\n11     Boolean bonus = true;\n12     int point = 10;\n13     int newPoint = changePoint(point, bonus, 100);\n14     System.out.println(point);\n15     System.out.println(newPoint);\n16   }\n17 }",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 第 04 行 bonus 的值為 true。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 第 05 行 extra 的值為 300。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 第 07 行 point 的值為 110。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D. 第 14 行 point 的值為 110。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-014",
+      "big_question_number": 14,
+      "big_question_title": "你在撰寫一個 Java 方法，此方法要能執行下列工作：可接受一個 double 陣列；會傳回陣列中的最大值。請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "public double getMax( ____A____ ){\n    ____B____\n    for (int i=1; i< ____C____ i++)\n        if( ____D____ )\n            ____E____\n    return max;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "double[] array",
+            "②": "double array",
+            "③": "double[length] array"
+          },
+          "answer": "①",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "double max = array[1];",
+            "②": "double max = array[0];"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "array.size()-1;",
+            "②": "array.size();",
+            "③": "array.length-1;",
+            "④": "array.length;"
+          },
+          "answer": "④",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 空格應填入何者？",
+          "options": {
+            "①": "max != array[i]",
+            "②": "max < array[i]"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 5,
+          "question_type": "單選",
+          "sub_question": "E 空格應填入何者？",
+          "options": {
+            "①": "max == array[i];",
+            "②": "max = array[i];"
+          },
+          "answer": "②",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-015",
+      "big_question_number": 15,
+      "big_question_title": "你要建立 if 陳述式，在同時滿足下列兩項條件時，該陳述式會判定為 true：total 大於或等於 num；nt 小於 num。請選擇適當的運算子填入對應的正確位置。",
+      "shared_code_context": "if (num ____A____ total ____B____ nt ____C____ num)",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "&&",
+            "②": "||",
+            "③": "<",
+            "④": ">",
+            "⑤": "<=",
+            "⑥": ">=",
+            "⑦": "==",
+            "⑧": "!="
+          },
+          "answer": "⑤",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "&&",
+            "②": "||",
+            "③": "<",
+            "④": ">",
+            "⑤": "<=",
+            "⑥": ">=",
+            "⑦": "==",
+            "⑧": "!="
+          },
+          "answer": "①",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "&&",
+            "②": "||",
+            "③": "<",
+            "④": ">",
+            "⑤": "<=",
+            "⑥": ">=",
+            "⑦": "==",
+            "⑧": "!="
+          },
+          "answer": "③",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-016",
+      "big_question_number": 16,
+      "big_question_title": "你在應徵 Java 程式開發人員工作，需要證明你了解 switch 運算式。在下列各個程式碼片段中，若可以使用最多三個 case 陳述式將該程式碼片段變更為 switch 運算式，請選取[O]；若無法則請選取[X]。",
+      "shared_code_context": "A. if (ages >= 65) { off = 0.50; } else if (ages >= 20) { off = 0.3; } else { off = 0.0; }\nB. if (level == \"甲\") { msg = \"超越標準\"; } else if (level == \"乙\") { msg = \"符合標準\"; } else { msg = \"需要改進\"; }\nC. if (score == 4.0) { order = 1; } else if (score >= 3.5) { order = 2; } else if (score >= 2.5) { order = 3; }",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 片段是否可改為 switch？",
+          "options": {
+            "O": "可以",
+            "X": "無法"
+          },
+          "answer": "X",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 片段是否可改為 switch？",
+          "options": {
+            "O": "可以",
+            "X": "無法"
+          },
+          "answer": "O",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 片段是否可改為 switch？",
+          "options": {
+            "O": "可以",
+            "X": "無法"
+          },
+          "answer": "X",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-017",
+      "big_question_number": 17,
+      "big_question_title": "你在撰寫一個 Java 程式，使用 countPrice 方法計算美術館的入場費(price)。基本票價為 100.00 元。加入會員需要花費 400.00 元。此方法必須符合規則：會員可享基本票價的三折優惠；65 歲以上的會員可免入場費；非會員可以基本票價購買，或在同一次交易中一起購買會員資格(joinMember)及打折票券；isMember 變數可指定對象是否為會員。請從下列選項中選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "double countPrice(boolean isMember, int ages, boolean joinMember){\n    double price;\n    if (isMember){\n        ____A____\n        price = 0.0;\n        }\n        ____B____\n        price = 30.0;\n        }\n    }\n    ____C____\n    price = 430.0;\n    }\n    ____D____\n    price = 130.0;\n    }\n    return price;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "else if (ages > 65)",
+            "②": "if (ages > 65)",
+            "③": "else{"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "else if (ages > 65)",
+            "②": "if (ages > 65)",
+            "③": "else{"
+          },
+          "answer": "③",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "else{",
+            "②": "else if(joinMember){",
+            "③": "if(joinMember){"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 空格應填入何者？",
+          "options": {
+            "①": "else{",
+            "②": "else if(joinMember){",
+            "③": "if(joinMember){"
+          },
+          "answer": "①",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-018",
+      "big_question_number": 18,
+      "big_question_title": "你為銀行撰寫管理信用帳戶開立的 Java 程式，若要開立新帳戶，該對象必須符合以下任一要求：超過 65 歲(ages)以上，且年收入(income)最低為 1,000,000 元；至少 21 歲，且年收入高於 2,500,000 元。請選擇適當的運算子填入對應的正確位置，來完成程式碼。",
+      "shared_code_context": "if (ages ____A____ 65 ____B____ income ____C____ 1000000 ____D____\n    ages ____E____ 21 ____F____ income ____G____ 2500000) {\n    System.out.println(\"通過\");\n} else {\n    System.out.println(\"未通過\");\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "⑦",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "⑧",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "⑨",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 5,
+          "question_type": "單選",
+          "sub_question": "E 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "⑧",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 6,
+          "question_type": "單選",
+          "sub_question": "F 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 7,
+          "question_type": "單選",
+          "sub_question": "G 空格應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "&&",
+            "③": "<=",
+            "④": "<",
+            "⑤": "==",
+            "⑥": "!=",
+            "⑦": ">",
+            "⑧": ">=",
+            "⑨": "||"
+          },
+          "answer": "⑦",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-019",
+      "big_question_number": 19,
+      "big_question_title": "你在撰寫一個 Java 方法，此方法要能執行下列工作：接受名稱為 ages 的 int 參數；若 ages 為 65 或以上，則指定為「老人」分類(kind)；若 ages 為 20 或以上，但低於 65，則指定為「成人」分類；否則指定為「青年」分類。請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "public static String ageClassification(int age){\n    String kind;\n    ____A____\n    kind = \"老人\";\n    ____B____\n    kind = \"成人\";\n    ____C____\n    kind = \"青年\";\n    return kind;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "if (ages != 65)",
+            "②": "if (ages >= 65)",
+            "③": "if (ages > 65)",
+            "④": "if (ages >= 65 || ages != 20)"
+          },
+          "answer": "②",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "if (ages < 20)",
+            "②": "if (ages > 19)",
+            "③": "else if (ages >= 19)",
+            "④": "else if (ages >= 20)"
+          },
+          "answer": "④",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "if (ages <= 20)",
+            "②": "else",
+            "③": "default",
+            "④": "else if (ages != 20)"
+          },
+          "answer": "②",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-020",
+      "big_question_number": 20,
+      "big_question_title": "您在撰寫一個 Java 的 countdown 方法，此方法必須執行下列工作：接受名稱為 num 的 int 參數；顯示從 num 遞減一到零的所有數字。請選取正確的程式碼片段來完成程式碼。",
+      "shared_code_context": "public static void countdown(int num){\n    for ( ____A____ ____B____ ____C____ ) {\n        System.out.println(i);\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 空格應填入何者？",
+          "options": {
+            "①": "int i = num;",
+            "②": "int i == num;",
+            "③": "int i < num;",
+            "④": "int i <= num;"
+          },
+          "answer": "①",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 空格應填入何者？",
+          "options": {
+            "①": "i < 0;",
+            "②": "i <= 0;",
+            "③": "i > 0;",
+            "④": "i >= 0;"
+          },
+          "answer": "④",
+          "notes": ""
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 空格應填入何者？",
+          "options": {
+            "①": "+i",
+            "②": "++i",
+            "③": "--i",
+            "④": "-i"
+          },
+          "answer": "③",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-021",
+      "big_question_number": 21,
+      "big_question_title": "請檢閱下列程式碼片段，判斷迴圈執行完成後主控台視窗會輸出下列何者？",
+      "shared_code_context": "char[][] array = {{'a', 'b', 'c'}, {'d', 'e', 'f'}, {'g', 'h', 'i'}};\nfor(int i = 0; i < array.length; i++)\n    for(int j = array[i].length - 1; j >= 0; j--)\n        System.out.println(array[i][j]);",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "主控台視窗會輸出下列何者？",
+          "options": {
+            "①": "cbafedihg",
+            "②": "abcdefghi",
+            "③": "ghidefabc",
+            "④": "ihgfedcba"
+          },
+          "answer": "①",
+          "notes": "內層迴圈由每列最後一個元素往前輸出，因此每列反向輸出。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-022",
+      "big_question_number": 22,
+      "big_question_title": "請審視下列程式碼片段，判斷迴圈執行完成後主控台視窗輸出為何？",
+      "shared_code_context": "int[][] array = {{2, 20, 15}, {16, 7, 32}, {50, 4, 27}};\nfor(int i = 0; i < array.length; i++){\n    for(int j = 0; j < array[i].length; j++){\n        if(array[i][j] < 10) break;\n        System.out.println(\"%d\", array[i][j]);\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "請問迴圈執行完成後，主控台視窗輸出為何？",
+          "options": {
+            "①": "16 50",
+            "②": "20 15 16 32 50 27",
+            "③": "50 4 27",
+            "④": "15 32 27"
+          },
+          "answer": "①",
+          "notes": "遇到小於 10 的元素即 break 結束該列內層迴圈，因此只輸出 16 與 50。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-023",
+      "big_question_number": 23,
+      "big_question_title": "你要在不變更功能下，重寫下列程式碼。請選擇適當的程式碼片段填入正確位置來完成程式碼。",
+      "shared_code_context": "01 showMenu();\n02 for( ; ; ){\n03     boolean n = newDeal();\n04     if(!n)\n05         break;\n06     showMenu();\n07 }\n\n重寫片段：\nA\n{\n    showMenu();\nB\n",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "} do;",
+            "②": "do",
+            "③": "} break;",
+            "④": "while (newDeal())",
+            "⑤": "while (newDeal());",
+            "⑥": "}",
+            "⑦": "} continue;",
+            "⑧": "continue"
+          },
+          "answer": "②",
+          "notes": "使用 do while 可先執行 showMenu()，再判斷是否繼續。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "} do;",
+            "②": "do",
+            "③": "} break;",
+            "④": "while (newDeal())",
+            "⑤": "while (newDeal());",
+            "⑥": "}",
+            "⑦": "} continue;",
+            "⑧": "continue"
+          },
+          "answer": "⑤",
+          "notes": "do-while 結尾需使用 while (newDeal());。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-024",
+      "big_question_number": 24,
+      "big_question_title": "你在撰寫一個 Java 的 checkItems 方法，此方法會接受名稱為 items 的 String 陣列，逐一查看元素內容，若有元素內容超過 10 個字元就停止查看並傳回 false，反之則傳回 true。請選取正確的程式碼片段完成程式碼。",
+      "shared_code_context": "public boolean checkItems(String[] items){\n    boolean allCheckItems = true;\n    A (String item B items) {\n        if(item.length() > 10) {\n            allCheckItems = false;\n            C\n        }\n    }\n    return allCheckItems;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "while",
+            "②": "for",
+            "③": "do"
+          },
+          "answer": "②",
+          "notes": "增強型 for 迴圈語法為 for (String item : items)。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "++",
+            "②": ":",
+            "③": ";",
+            "④": "instanceof"
+          },
+          "answer": "②",
+          "notes": "增強型 for 迴圈中變數與集合之間使用冒號。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "break;",
+            "②": "goto;",
+            "③": "continue;"
+          },
+          "answer": "①",
+          "notes": "超過 10 個字元後要停止查看，使用 break。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-025",
+      "big_question_number": 25,
+      "big_question_title": "你是位 Java 程式設計師，你的同事建立下列程式。此程式會從 60 開始倒數並在主控台顯示訊息，但此程式未能達到預期功能。請選取正確的程式碼片段來修正程式碼。",
+      "shared_code_context": "public static void main(String[] args){\n    int times = 60;\n    while (times A 0){\n        if (times B 0){\n            break;\n        }\n        else {\n            System.out.println(\"倒數計時中...\");\n            times C;\n        }\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "==",
+            "②": ">=",
+            "③": "<=",
+            "④": "=>"
+          },
+          "answer": "②",
+          "notes": "從 60 倒數到 0，while 條件應為 times >= 0。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "=",
+            "②": "==",
+            "③": "!=",
+            "④": "=>"
+          },
+          "answer": "②",
+          "notes": "判斷是否等於 0 應使用 ==。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "++",
+            "②": "-=",
+            "③": "++",
+            "④": "--",
+            "⑤": "-"
+          },
+          "answer": "④",
+          "notes": "倒數需將 times 遞減，使用 --。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-026",
+      "big_question_number": 26,
+      "big_question_title": "你正在面試 Java 程式開發人員的工作，你看到下列程式碼。你要判斷 test() 方法的輸出。",
+      "shared_code_context": "public class JavaTester\n{\n    int a = 5;\n    static int b = 5;\n    public void test()\n    {\n        int a = 10;\n        int b = 10;\n        System.out.println(\"a = \" + a);\n        System.out.println(\"this.a = \" + this.a);\n        System.out.println(\"b = \" + b);\n        System.out.println(\"JavaTester.b = \" + JavaTester.b);\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 第 09 行輸出為何？",
+          "options": {
+            "①": "a = 5",
+            "②": "a = 10"
+          },
+          "answer": "②",
+          "notes": "區域變數 a 會遮蔽成員變數 a。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 第 10 行輸出為何？",
+          "options": {
+            "①": "this.a = 5",
+            "②": "this.a = 10",
+            "③": "this.x=\"Error\""
+          },
+          "answer": "①",
+          "notes": "this.a 指的是物件成員變數 a，值為 5。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 第 11 行輸出為何？",
+          "options": {
+            "①": "b = 5",
+            "②": "b = 10"
+          },
+          "answer": "②",
+          "notes": "區域變數 b 會遮蔽 static 成員變數 b。"
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D. 第 12 行輸出為何？",
+          "options": {
+            "①": "JavaTester.b = 5",
+            "②": "JavaTester.b = 10",
+            "③": "JavaTester.b = \"Error\""
+          },
+          "answer": "①",
+          "notes": "JavaTester.b 指的是 static 成員變數 b，值為 5。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-027",
+      "big_question_number": 27,
+      "big_question_title": "你要建立 Test 類別來模擬學校考試，此類別必須符合要求：不用將 Test 類別實體化，就可呼叫 setMaxItems 方法；只有和 Test 類別在同一套件中的類別可呼叫 setItems 方法；只有和 Test 類別在同一套件中的類別可呼叫名稱為 setPassScore 的執行個體方法。",
+      "shared_code_context": "class Test {\n    A void setItems(int num){\n    }\n    B void setPassScore(int score){\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "protected",
+            "②": "private",
+            "③": "static",
+            "④": "public"
+          },
+          "answer": "③",
+          "notes": "不需實體化即可呼叫的方法需宣告為 static。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "protected",
+            "②": "private",
+            "③": "static",
+            "④": "public"
+          },
+          "answer": "①",
+          "notes": "題目答案指定同套件可呼叫，此處使用 protected。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-028",
+      "big_question_number": 28,
+      "big_question_title": "你在撰寫名稱為 account 的 Java 類別，此類別具備下列方法：不用將 account 類別實體化，就能從任何程式碼呼叫 showItems 方法；僅有同一套件中的類別，以及任何套件中 account 類別的子類別可以存取名稱為 newAccount 的方法。",
+      "shared_code_context": "public class account {\n    A B void showItems() {/*...*/}\n    C void newAccount(String[] items) {/*...*/}\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "final",
+            "③": "protected",
+            "④": "public",
+            "⑤": "static"
+          },
+          "answer": "④",
+          "notes": "任何程式碼可呼叫，需使用 public。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "final",
+            "③": "protected",
+            "④": "public",
+            "⑤": "static"
+          },
+          "answer": "⑤",
+          "notes": "不用實體化即可呼叫，需使用 static。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "final",
+            "③": "protected",
+            "④": "public",
+            "⑤": "static"
+          },
+          "answer": "③",
+          "notes": "同套件與子類別可存取，使用 protected。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-029",
+      "big_question_number": 29,
+      "big_question_title": "你是 Java 程式設計師，同事建立了 Triangle 類別。你要撰寫 Triangle 類別的測試程式，請選取正確的程式碼片段來完成測試程式碼。",
+      "shared_code_context": "public class Triangle {\n    private int width;\n    private int length;\n\n    Triangle(int width, int length){\n        this.width = width;\n        this.length = length;\n    }\n\n    public int calArea(){\n        return this.width * this.length / 2;\n    }\n\n    public int getWidth(){\n        return this.width;\n    }\n\n    public int getLength(){\n        return this.length;\n    }\n}\n\nint area;\nA\nB\nSystem.out.printf(\"寬= %d 高 = %d\n\", C);\nSystem.out.printf(\"面積= %b \n\", area == 400);",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "Triangle tri = new(20, 40);",
+            "②": "new tri = Triangle(20, 40);",
+            "③": "Triangle tri = new Triangle(20, 40);",
+            "④": "Triangle tri = Triangle(20, 40);"
+          },
+          "answer": "③",
+          "notes": "建立物件語法為 類別 變數 = new 類別(引數)。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "area = tri()",
+            "②": "area = tri.calArea()",
+            "③": "area = calArea.tri()",
+            "④": "area = Triangle.calArea()"
+          },
+          "answer": "②",
+          "notes": "calArea 是物件方法，需透過 tri 呼叫。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "tri.Width, tri.Length",
+            "②": "tri.getWidth(), tri.getLength()",
+            "③": "Triangle.width, Triangle.length",
+            "④": "tri.width, tri.length",
+            "⑤": "Triangle.getWidth(), Triangle.getLength()"
+          },
+          "answer": "②",
+          "notes": "width 與 length 是 private，需透過 getter 取得。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-030",
+      "big_question_number": 30,
+      "big_question_title": "你為學校撰寫下列程式。Teacher 類別要使用自訂的 toString 方法，而非標準方法。請問應該在第 04 行使用哪個註解？",
+      "shared_code_context": "public class Teacher{\n    public String tchName = \"Jack\";\n\n    public String toString(){\n        return tchName;\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "第 04 行應使用哪個註解？",
+          "options": {
+            "①": "@Override",
+            "②": "@Rewrite",
+            "③": "@Repeatable",
+            "④": "@Inherited"
+          },
+          "answer": "①",
+          "notes": "覆寫 Object 的 toString 方法應使用 @Override。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-031",
+      "big_question_number": 31,
+      "big_question_title": "你是銀行的 Java 程式設計師，請審視下列 account 類別，對於下列每一項敘述請選取 [O] 或 [X]。",
+      "shared_code_context": "public class account{\n    protected int amount;\n    public account() {\n        amount = 0;\n    }\n    public account(int total) {\n        amount = total;\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. account 類別只有單一建構函式。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": "類別中有無參數與一個 int 參數兩個建構函式。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 其他類別可以繼承 account 類別。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": "類別未宣告 final，因此可以被繼承。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 第 07 行敘述可改寫為 this.amount = total;。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": "this.amount 明確指定目前物件的成員變數。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-032",
+      "big_question_number": 32,
+      "big_question_title": "你要建立名稱為 Car 的 Java 類別用來模擬汽車，此類別必須符合下列需求：任何套件中的所有類別都可將 Car 類別實體化；只有 Car 類別可存取和修改 speed 資料成員；只有和 Car 類別同一套件中的類別才可存取和修改 color 資料成員；每一個已實體化的 Car 物件都可以擁有不同的資料成員。",
+      "shared_code_context": "A class Car{\n    B int speed;\n    C String color;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "protected",
+            "③": "public",
+            "④": "final",
+            "⑤": "abstract"
+          },
+          "answer": "③",
+          "notes": "任何套件都可實體化，類別需為 public。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "protected",
+            "③": "public",
+            "④": "final",
+            "⑤": "abstract"
+          },
+          "answer": "①",
+          "notes": "只有本類別可存取，使用 private。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "protected",
+            "③": "public",
+            "④": "final",
+            "⑤": "abstract"
+          },
+          "answer": "②",
+          "notes": "依題目答案，color 使用 protected。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-033",
+      "big_question_number": 33,
+      "big_question_title": "你要建立 Freezer 類別用來模擬冰箱，此類別必須符合需求：只允許在同一套件中的類別可存取 Freezer 類別；只允許 Freezer 類別本身存取及修改 temperature 資料成員；只允許與 Freezer 類別在同一套件中的類別存取名稱為 minTemperature 的資料成員；確保 minTemperature 資料成員宣告後就無法修改。",
+      "shared_code_context": "A Freezer {\n    B int temperature;\n    C int minTemperature = -15;\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "public class",
+            "②": "class",
+            "③": "final",
+            "④": "private",
+            "⑤": "abstract"
+          },
+          "answer": "②",
+          "notes": "未加 public 的 class 只能在同一套件存取。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "public class",
+            "②": "class",
+            "③": "final",
+            "④": "private",
+            "⑤": "abstract"
+          },
+          "answer": "④",
+          "notes": "只有本類別可存取及修改，使用 private。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "public class",
+            "②": "class",
+            "③": "final",
+            "④": "private",
+            "⑤": "abstract"
+          },
+          "answer": "③",
+          "notes": "宣告後不可修改，使用 final。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-034",
+      "big_question_number": 34,
+      "big_question_title": "Song 類別包含一個只能從類別內部存取的 isInSinger 方法。isInSinger 方法接受歌手姓名，來和歌手清單進行比較。請選取正確的選項來完成程式碼。",
+      "shared_code_context": "A B isInSinger C {\n    for (int i = 0; i < numSingers; i++){\n        if (singers[i].equals(singer)) D\n    }\n    E\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應填入何者？",
+          "options": {
+            "①": "private",
+            "②": "public",
+            "③": "protected",
+            "④": "static"
+          },
+          "answer": "①",
+          "notes": "只能從類別內部存取，使用 private。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應填入何者？",
+          "options": {
+            "①": "bool",
+            "②": "int",
+            "③": "void",
+            "④": "String",
+            "⑤": "Song"
+          },
+          "answer": "①",
+          "notes": "依題目答案，回傳型別選 bool。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應填入何者？",
+          "options": {
+            "①": "()",
+            "②": "(Song singer)",
+            "③": "(bool singer)",
+            "④": "(String singer)"
+          },
+          "answer": "④",
+          "notes": "方法接受歌手姓名，參數為 String singer。"
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D 應填入何者？",
+          "options": {
+            "①": "return Song;",
+            "②": "return false;",
+            "③": "return singer;",
+            "④": "return true;"
+          },
+          "answer": "④",
+          "notes": "若找到相同歌手則回傳 true。"
+        },
+        {
+          "sub_question_number": 5,
+          "question_type": "單選",
+          "sub_question": "E 應填入何者？",
+          "options": {
+            "①": "return Song;",
+            "②": "return false;",
+            "③": "return singer;",
+            "④": "return true;"
+          },
+          "answer": "②",
+          "notes": "迴圈結束仍未找到則回傳 false。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-035",
+      "big_question_number": 35,
+      "big_question_title": "你的程式使用 Student 類別來建立 Student 類型的物件。每個資料成員都具備存取子和更動子(getter 和 setter)方法。請選取正確的選項來完成句子。",
+      "shared_code_context": "若要建立名稱為 jack 的物件執行個體，需要使用 A。\nB 資料成員只能使用其 getter 和 setter 函式從 main 方法存取。\n若要將 jack 物件傳遞給名稱為 show 的非成員函式，需要從 main 方法使用 C。",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A 應選何者？",
+          "options": {
+            "①": "student jack = new Student();",
+            "②": "student jack = new student();",
+            "③": "Student jack = new student();",
+            "④": "Student jack = new Student();"
+          },
+          "answer": "④",
+          "notes": "類別名稱大小寫需正確，建立物件語法為 Student jack = new Student();。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B 應選何者？",
+          "options": {
+            "①": "Private",
+            "②": "Public",
+            "③": "Protected"
+          },
+          "answer": "①",
+          "notes": "資料成員若只能透過 getter/setter 存取，通常宣告為 private。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C 應選何者？",
+          "options": {
+            "①": "jack.show();",
+            "②": "show(jack);",
+            "③": "show(Student.jack);",
+            "④": "jack -> show();"
+          },
+          "answer": "②",
+          "notes": "非成員函式需以 show(jack) 方式傳入物件。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-036",
+      "big_question_number": 36,
+      "big_question_title": "請審視下列程式碼片段，執行此程式碼時會產生下列何種錯誤？",
+      "shared_code_context": "public class DivisionMaker\n{\n    public static int division(int a, int b) {\n        return a / b;\n    }\n\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 2;\n        float c = division(a, b);\n        System.out.println(c);\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "執行此程式碼時會產生下列何種錯誤？",
+          "options": {
+            "①": "邏輯錯誤",
+            "②": "編譯錯誤",
+            "③": "執行階段錯誤",
+            "④": "語法錯誤"
+          },
+          "answer": "①",
+          "notes": "7/2 會先做整數除法得到 3，再指定給 float，語法可編譯但結果不是精確小數。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-037",
+      "big_question_number": 37,
+      "big_question_title": "請審視下列程式碼，判斷執行此程式時的輸出為何。",
+      "shared_code_context": "public class SearchArray{\n    public static void main(String[] args)\n    {\n        int[][] ary={{19, 25}, {28, 30, 50}};\n        for (int x = 2; x >= 0; x--){\n            for (int y = 2; y >= 0; y--){\n                System.out.println(ary[x][y] + \" \");\n            }\n        }\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "執行此程式時的輸出為何？",
+          "options": {
+            "①": "30 28 25 19",
+            "②": "50 25 30 19 28",
+            "③": "ArrayIndexOutOfBounds Exception",
+            "④": "編譯錯誤"
+          },
+          "answer": "③",
+          "notes": "ary 的第一維索引只有 0 與 1，但迴圈從 x=2 開始，會發生陣列索引超出範圍例外。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-038",
+      "big_question_number": 38,
+      "big_question_title": "請審視下列程式碼片段。上述程式碼無法編譯。若下列各項動作能解決編譯錯誤，請選取[O]，否則請選取[X]。",
+      "shared_code_context": "public class Student{\n    private int id = 1;\n    public static void main(String[] args) {\n        Student student = new Student();\n        id = 3;\n        showId();\n    }\n\n    protected void displayId(){\n        System.out.println(id);\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 將 id 變數的存取修飾詞修改為 public。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": "改成 public 仍無法在 static main 中直接以 id 存取實例欄位，也未修正 showId 名稱問題。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 將 displayId 方法的存取修飾詞修改為 public。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": "方法名稱仍為 displayId，程式呼叫 showId，且未透過物件呼叫。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 在第 05 與 06 行，將前置詞 student. 加到 id 及 displayId() 之前。",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": "同一類別中可透過 student.id 與 student.displayId() 存取該物件成員。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-039",
+      "big_question_number": 39,
+      "big_question_title": "你審視下列程式碼片段後，要找出輸出結果。若程式片段會顯示下列的輸出，請選取[O]，若不是，請選取[X]。",
+      "shared_code_context": "try{\n    int x = 1 / 0;\n    System.out.println(\"執行 try\");\n}\ncatch (ArithmeticException ex) {\n    System.out.println(\"捕捉到 ArithmeticException\");\n}\ncatch (Exception ex) {\n    System.out.println(\"捕捉到 Exception\");\n}\nfinally{\n    System.out.println(\"執行 finally\");\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "A. 執行 try",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": "第 2 行先發生除以零例外，因此不會印出「執行 try」。"
+        },
+        {
+          "sub_question_number": 2,
+          "question_type": "單選",
+          "sub_question": "B. 捕捉到 ArithmeticException",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": "除以零會被 ArithmeticException catch 區塊捕捉。"
+        },
+        {
+          "sub_question_number": 3,
+          "question_type": "單選",
+          "sub_question": "C. 捕捉到 Exception",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "X",
+          "notes": "例外已被前一個 ArithmeticException catch 捕捉，不會再進入 Exception catch。"
+        },
+        {
+          "sub_question_number": 4,
+          "question_type": "單選",
+          "sub_question": "D. 執行 finally",
+          "options": {
+            "O": "正確",
+            "X": "錯誤"
+          },
+          "answer": "O",
+          "notes": "finally 區塊一定會執行。"
+        }
+      ]
+    },
+    {
+      "question_bank": "考古題庫1",
+      "big_question_id": "EXAM1-040",
+      "big_question_number": 40,
+      "big_question_title": "請審視下列程式碼，判斷執行此程式時的輸出為何。",
+      "shared_code_context": "public class Test{\n    public static void main(String[] args) throws ArrayIndexOutOfBoundsException{\n        try{\n            int a = 0;\n            int b = 20;\n            int division = b / a;\n            int ary[] = {1};\n            ary[10] = 10;\n            System.out.println(\"相除結果: \" + division);\n        }\n        catch(ArithmeticException ex){\n            System.out.println(\"例外發生原因: \" + ex);\n        } catch(RuntimeException e){\n            System.out.println(\"例外發生原因: \" + e);\n        }\n    }\n}",
+      "sub_questions": [
+        {
+          "sub_question_number": 1,
+          "question_type": "單選",
+          "sub_question": "執行此程式時的輸出為何？",
+          "options": {
+            "①": "相除結果: 20",
+            "②": "例外發生原因: java.lang.ArithmeticException: / by zero",
+            "③": "例外發生原因: java.lang.RuntimeException: Index 10 out of bounds for length 1",
+            "④": "例外發生原因: java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 1"
+          },
+          "answer": "②",
+          "notes": "程式先在 b / a 發生除以零例外，會被 ArithmeticException 捕捉並輸出該例外訊息。"
+        }
+      ]
+    }
+  ]
+}
