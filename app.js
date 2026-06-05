@@ -54,6 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
         subQuestions: bq.sub_questions,
     }));
 
+    // --- Shuffle questions if requested ---
+    const shouldShuffle = params.get('shuffle') === '1';
+    if (shouldShuffle) {
+        for (let i = quizPages.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [quizPages[i], quizPages[j]] = [quizPages[j], quizPages[i]];
+        }
+    }
+
     // --- State ---
     let userAnswers = {}; // keyed by sub_question id
     let flaggedQuestions = new Set();

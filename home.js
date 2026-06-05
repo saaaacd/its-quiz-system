@@ -213,7 +213,8 @@ function closeModeModal() {
 
 function startExamWithMode(mode) {
     if (pendingExamId) {
-        window.location.href = `quiz.html?exam=${pendingExamId}&mode=${mode}`;
+        const shuffle = document.getElementById('shuffle-checkbox').checked ? '1' : '0';
+        window.location.href = `quiz.html?exam=${pendingExamId}&mode=${mode}&shuffle=${shuffle}`;
     }
 }
 
