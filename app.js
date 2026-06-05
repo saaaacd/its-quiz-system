@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'ch8': '第八章',
         'ch9': '第九章',
         'ch10': '第十章',
+        'ch11': '第十一章',
+        'ch12': '第十二章',
     };
 
     const chapterKey = chapterMap[examId];

@@ -126,6 +126,30 @@ const examCatalog = [
         type: 'Java ITS',
         date: '2026-5-30',
         topics: 'try-catch、throws、自訂例外',
+    },
+    {
+        id: 'ch11',
+        title: 'Java 第十一章 — 檔案處理',
+        difficulty: 'hard',
+        difficultyLabel: '進階',
+        questionCount: 3,
+        subQuestionCount: 16,
+        timeMinutes: 20,
+        type: 'Java ITS',
+        date: '2026-6-5',
+        topics: 'File、FileReader、BufferedReader、FileWriter',
+    },
+    {
+        id: 'ch12',
+        title: 'Java 第十二章 — 集合框架',
+        difficulty: 'medium',
+        difficultyLabel: '中等',
+        questionCount: 4,
+        subQuestionCount: 4,
+        timeMinutes: 10,
+        type: 'Java ITS',
+        date: '2026-6-5',
+        topics: 'ArrayList、HashSet、TreeSet、Collections',
     }
 ];
 

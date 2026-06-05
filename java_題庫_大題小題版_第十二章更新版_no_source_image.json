@@ -1,7 +1,7 @@
 {
-  "version": "大題小題版_第十章更新版_no_source_image",
-  "total_big_questions": 61,
-  "total_sub_questions": 157,
+  "version": "大題小題版_第十二章更新版_no_source_image",
+  "total_big_questions": 68,
+  "total_sub_questions": 177,
   "chapters": {
     "第一章": [
       {
@@ -2581,7 +2581,7 @@
         "big_question_id": "CH10-006",
         "big_question_number": 6,
         "big_question_title": "試開發一個能夠讀寫檔案的應用程式，請選擇正確的敘述片段完成例外處理程式。",
-        "shared_code_context": "try {\n    /* 檔案處理程式區塊 */\n}\ncatch ( ____①____ ex1) {\n    System.out.println(ex1 ____②____);\n}\ncatch ( ____③____ ex2) {\n    System.out.println(ex2 ____④____);\n}",
+        "shared_code_context": "try {\n    /* 檔案處理程式區塊 */\n}\ncatch ( ________ ex1) {\n    System.out.println(ex1 ________);\n}\ncatch ( ________ ex2) {\n    System.out.println(ex2 ________);\n}",
         "sub_questions": [
           {
             "id": "CH10-006-1",
@@ -2631,6 +2631,421 @@
             },
             "answer": "C",
             "notes": "顯示堆疊資料使用 printStackTrace()。"
+          }
+        ]
+      }
+    ],
+    "第十一章": [
+      {
+        "big_question_id": "CH11-001",
+        "big_question_number": 1,
+        "big_question_title": "欲將 test.txt 文字檔的所有資料顯示出來，請加入合適的敘述至下列程式片段。",
+        "shared_code_context": "01 import java.io.*;\n02\n03 public class Demo {\n04     public static void main(String[] args){\n05         try{\n06             File ① = new File(\"test.txt\");\n07             ② ③ = new ④(object1);\n08             ⑤ object3 = new ⑥(object2);\n09             String object4 = null;\n10             while((object4 = ⑦.⑧()) != null){\n11                 System.out.println(object4);\n12             }\n13             ⑨.⑩();\n14         } catch(IOException e){\n15             e.printStackTrace();\n16         }\n17     }\n18 }",
+        "sub_questions": [
+          {
+            "id": "CH11-001-1",
+            "sub_question_number": 1,
+            "question": "第 ① 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "I",
+            "notes": "第 6 行建立 File 物件，變數名稱應為 object1。"
+          },
+          {
+            "id": "CH11-001-2",
+            "sub_question_number": 2,
+            "question": "第 ② 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "C",
+            "notes": "第 7 行宣告 FileReader 物件。"
+          },
+          {
+            "id": "CH11-001-3",
+            "sub_question_number": 3,
+            "question": "第 ③ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "J",
+            "notes": "第 7 行 FileReader 物件名稱為 object2。"
+          },
+          {
+            "id": "CH11-001-4",
+            "sub_question_number": 4,
+            "question": "第 ④ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "C",
+            "notes": "第 7 行以 new FileReader(object1) 讀取 File 物件。"
+          },
+          {
+            "id": "CH11-001-5",
+            "sub_question_number": 5,
+            "question": "第 ⑤ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "A",
+            "notes": "第 8 行宣告 BufferedReader 物件，用於逐行讀取文字資料。"
+          },
+          {
+            "id": "CH11-001-6",
+            "sub_question_number": 6,
+            "question": "第 ⑥ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "A",
+            "notes": "第 8 行以 new BufferedReader(object2) 建立緩衝讀取物件。"
+          },
+          {
+            "id": "CH11-001-7",
+            "sub_question_number": 7,
+            "question": "第 ⑦ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "K",
+            "notes": "while 迴圈要透過 object3 這個 BufferedReader 物件讀取資料。"
+          },
+          {
+            "id": "CH11-001-8",
+            "sub_question_number": 8,
+            "question": "第 ⑧ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "F",
+            "notes": "BufferedReader 逐行讀取文字資料使用 readLine()。"
+          },
+          {
+            "id": "CH11-001-9",
+            "sub_question_number": 9,
+            "question": "第 ⑨ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "K",
+            "notes": "讀取完畢後應關閉 object3 資料流。"
+          },
+          {
+            "id": "CH11-001-10",
+            "sub_question_number": 10,
+            "question": "第 ⑩ 格應填入的敘述為何？",
+            "options": {
+              "A": "BufferedReader",
+              "B": "BufferedWriter",
+              "C": "FileReader",
+              "D": "FileWriter",
+              "E": "read",
+              "F": "readLine",
+              "G": "flush",
+              "H": "close",
+              "I": "object1",
+              "J": "object2",
+              "K": "object3",
+              "L": "object4"
+            },
+            "answer": "H",
+            "notes": "關閉資料流的方法是 close()。"
+          }
+        ]
+      },
+      {
+        "big_question_id": "CH11-002",
+        "big_question_number": 2,
+        "big_question_title": "欲將 \"Java SE\" 資料附加到 test.txt 文字檔的最後，請加入合適的敘述至下列程式片段。",
+        "shared_code_context": "01 import java.io.*;\n02 public class Sample {\n03     public static void main(String[] args){\n04         try{\n05             ① out = null;\n06             out = new ②(new ③(④));\n07             out.⑤(\"Java SE\");\n08             out.close();\n09         } catch(IOException e){\n10             e.printStackTrace();\n11         }\n12     }\n13 }",
+        "sub_questions": [
+          {
+            "id": "CH11-002-1",
+            "sub_question_number": 1,
+            "question": "第 ① 格應填入的敘述為何？",
+            "options": {
+              "A": "write",
+              "B": "append",
+              "C": "BufferedWriter",
+              "D": "FileWriter",
+              "E": "\"abc.txt\"",
+              "F": "\"abc.txt\", true"
+            },
+            "answer": "C",
+            "notes": "第 5 行宣告 BufferedWriter 物件 out。"
+          },
+          {
+            "id": "CH11-002-2",
+            "sub_question_number": 2,
+            "question": "第 ② 格應填入的敘述為何？",
+            "options": {
+              "A": "write",
+              "B": "append",
+              "C": "BufferedWriter",
+              "D": "FileWriter",
+              "E": "\"abc.txt\"",
+              "F": "\"abc.txt\", true"
+            },
+            "answer": "C",
+            "notes": "第 6 行建立 BufferedWriter 物件。"
+          },
+          {
+            "id": "CH11-002-3",
+            "sub_question_number": 3,
+            "question": "第 ③ 格應填入的敘述為何？",
+            "options": {
+              "A": "write",
+              "B": "append",
+              "C": "BufferedWriter",
+              "D": "FileWriter",
+              "E": "\"abc.txt\"",
+              "F": "\"abc.txt\", true"
+            },
+            "answer": "D",
+            "notes": "BufferedWriter 的建構式可傳入 FileWriter 物件。"
+          },
+          {
+            "id": "CH11-002-4",
+            "sub_question_number": 4,
+            "question": "第 ④ 格應填入的敘述為何？",
+            "options": {
+              "A": "write",
+              "B": "append",
+              "C": "BufferedWriter",
+              "D": "FileWriter",
+              "E": "\"abc.txt\"",
+              "F": "\"abc.txt\", true"
+            },
+            "answer": "F",
+            "notes": "要附加到檔案最後，FileWriter 建構式應使用檔名與 true，例如 new FileWriter(\"abc.txt\", true)。"
+          },
+          {
+            "id": "CH11-002-5",
+            "sub_question_number": 5,
+            "question": "第 ⑤ 格應填入的敘述為何？",
+            "options": {
+              "A": "write",
+              "B": "append",
+              "C": "BufferedWriter",
+              "D": "FileWriter",
+              "E": "\"abc.txt\"",
+              "F": "\"abc.txt\", true"
+            },
+            "answer": "A",
+            "notes": "BufferedWriter 寫入資料使用 write() 方法。"
+          }
+        ]
+      },
+      {
+        "big_question_id": "CH11-003",
+        "big_question_number": 3,
+        "big_question_title": "目前的目錄是空的，該用戶具有讀寫權限，並執行以下程式碼。試問下列何者為真？",
+        "shared_code_context": "11 import java.io.*;\n12 public class FileDemo01 {\n13     public static void main(String[] args){\n14         File dir = new File(\"dir\");\n15         dir.mkdir();\n16         File f1 = new File(dir, \"f1.txt\");\n17         try{\n18             f1.createNewFile();\n19         } catch(IOException e){}\n20         File newDir = new File(\"newDir\");\n21         dir.renameTo(newDir);\n22     }\n23 }",
+        "sub_questions": [
+          {
+            "id": "CH11-003-1",
+            "sub_question_number": 1,
+            "question": "目前的目錄是空的，該用戶具有讀寫權限，並執行以下程式碼。試問下列何者為真？",
+            "options": {
+              "A": "Compilation fails.",
+              "B": "The file system has a new empty directory named dir.",
+              "C": "The file system has a new empty directory named newDir.",
+              "D": "The file system has a directory named dir, containing a file f1.txt.",
+              "E": "The file system has a directory named newdir, containing a file f1.txt."
+            },
+            "answer": "E",
+            "notes": "第 15 行建立 dir 目錄；第 18 行在 dir 下建立 f1.txt；第 21 行將 dir 重新命名為 newDir，因此檔案系統中會有新目錄 newDir，內含 f1.txt。"
+          }
+        ]
+      }
+    ],
+    "第十二章": [
+      {
+        "big_question_id": "CH12-001",
+        "big_question_number": 1,
+        "big_question_title": "下面程式碼執行後結果為下列何者？（行號僅供參考）",
+        "shared_code_context": "01 import java.util.*;\n02 public class LetterASort {\n03     public static void main(String[] args) {\n04         ArrayList<String> strings = new ArrayList<String>();\n05         strings.add(\"aAaA\");\n06         strings.add(\"AaA\");\n07         strings.add(\"aAa\");\n08         strings.add(\"AAaa\");\n09         Collections.sort(strings);\n10         for (String s : strings) { System.out.print(s + \"\"); }\n11     }\n12 }",
+        "sub_questions": [
+          {
+            "id": "CH12-001-1",
+            "sub_question_number": 1,
+            "question": "下面程式碼執行後結果為下列何者？",
+            "options": {
+              "A": "編譯失敗",
+              "B": "aAaAaAaAAaaAaA",
+              "C": "AAaaAaAaAaaAaA",
+              "D": "AaAAAaaaAaAaAa",
+              "E": "aAaAaAaAaAAAaa"
+            },
+            "answer": "C",
+            "notes": "Collections.sort(strings) 會依字串自然排序；大寫 A 的 ASCII 碼小於小寫 a，因此排序結果為 \"AAaa\"、\"AaA\"、\"aAa\"、\"aAaA\"，輸出為 AAaaAaAaAaaAaA。"
+          }
+        ]
+      },
+      {
+        "big_question_id": "CH12-002",
+        "big_question_number": 2,
+        "big_question_title": "若執行結果為 [9, 18]，則第 4 行的程式碼敘述為下列何者？（行號僅供參考）",
+        "shared_code_context": "01 import java.util.*;\n02 public class Example {\n03     public static void main(String[] args) {\n04         // insert code here\n05         set.add(18);\n06         set.add(9);\n07         System.out.println(set);\n08     }\n09 }",
+        "sub_questions": [
+          {
+            "id": "CH12-002-1",
+            "sub_question_number": 1,
+            "question": "若執行結果為 [9, 18]，則第 4 行的程式碼敘述為下列何者？",
+            "options": {
+              "A": "Set<Integer> set = new TreeSet<>();",
+              "B": "Set<Integer> set = new HashSet<>();",
+              "C": "Set<Integer> set = new SortedSet<>();",
+              "D": "List<Integer> set = new SortedSet<>();",
+              "E": "Set<Integer> set = new LinkedList<>();"
+            },
+            "answer": "A",
+            "notes": "TreeSet 會依自然順序排序，且 TreeSet 實作 SortedSet；SortedSet 是介面不能直接 new，LinkedList 也不是 Set。"
+          }
+        ]
+      },
+      {
+        "big_question_id": "CH12-003",
+        "big_question_number": 3,
+        "big_question_title": "下面程式碼執行後的結果為下列何者？（行號僅供參考）",
+        "shared_code_context": "01 import java.util.*;\n02 public class Mapit {\n03     public static void main(String[] args) {\n04         Set<Integer> set = new HashSet<>();\n05         int i1 = 45, i2 = 46;\n06         set.add(i1);\n07         set.add(i1);\n08         set.add(i2);\n09         System.out.print(set.size() + \" \");\n10         set.remove(i1);\n11         System.out.print(set.size() + \" \");\n12         i2 = 47;\n13         set.remove(i2);\n14         System.out.print(set.size() + \" \");\n15     }\n16 }",
+        "sub_questions": [
+          {
+            "id": "CH12-003-1",
+            "sub_question_number": 1,
+            "question": "下面程式碼執行後的結果為下列何者？",
+            "options": {
+              "A": "2 1 0",
+              "B": "2 1 1",
+              "C": "3 2 1",
+              "D": "3 2 2",
+              "E": "編譯失敗"
+            },
+            "answer": "B",
+            "notes": "HashSet 不允許重複元素，因此加入 i1 兩次與 i2 後大小為 2；移除 i1 後大小為 1；i2 改為 47 後 set 中沒有 47，移除失敗，大小仍為 1。"
+          }
+        ]
+      },
+      {
+        "big_question_id": "CH12-004",
+        "big_question_number": 4,
+        "big_question_title": "執行結果為下列何者？（行號僅供參考）",
+        "shared_code_context": "01 import java.util.*;\n02 public class SortOf {\n03     public static void main(String[] args) {\n04         ArrayList<Integer> a = new ArrayList<>();\n05         a.add(1); a.add(5); a.add(3);\n06         Collections.sort(a);\n07         a.add(2);\n08         Collections.reverse(a);\n09         System.out.println(a);\n10     }\n11 }",
+        "sub_questions": [
+          {
+            "id": "CH12-004-1",
+            "sub_question_number": 1,
+            "question": "執行結果為下列何者？",
+            "options": {
+              "A": "[1, 2, 3, 5]",
+              "B": "[2, 1, 3, 5]",
+              "C": "[2, 5, 3, 1]",
+              "D": "[1, 3, 5, 2]",
+              "E": "編譯失敗"
+            },
+            "answer": "C",
+            "notes": "ArrayList 有順序性。先加入 [1, 5, 3]，排序後為 [1, 3, 5]，再加入 2 變成 [1, 3, 5, 2]，反轉後輸出 [2, 5, 3, 1]。"
           }
         ]
       }
