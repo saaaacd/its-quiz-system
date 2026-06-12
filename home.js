@@ -20,6 +20,18 @@ const examCatalog = [
         topics: '綜合題型：語法、型別、流程控制、物件導向、例外處理',
     },
     {
+        id: 'exam2',
+        title: '📌 模擬試題 2 — Java ITS 考古題',
+        difficulty: 'hard',
+        difficultyLabel: '模擬考',
+        questionCount: 40,
+        subQuestionCount: 113,
+        timeMinutes: 50,
+        type: 'Java ITS',
+        date: '2026-6-13',
+        topics: '綜合題型：語法、型別、流程控制、物件導向、例外處理',
+    },
+    {
         id: 'ch1',
         title: 'Java 第一章 — 基礎語法與註解',
         difficulty: 'easy',
