@@ -130,15 +130,15 @@
           "question_type": "排序",
           "sub_question": "第一個程式碼片段應為何？",
           "options": {
-            "1": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "2": "System.out.println(arguments[x]);",
-            "3": "public static void main(String[] args) {",
-            "4": "for (int x = 1; x <= arguments.length; x++) {",
-            "5": "public static void main(String arguments) {",
-            "6": "System.out.println(args[x]);",
-            "7": "for (int x = 0; x < args.length; x++) {"
+            "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
+            "②": "System.out.println(arguments[x]);",
+            "③": "public static void main(String[] args) {",
+            "④": "for (int x = 1; x <= arguments.length; x++) {",
+            "⑤": "public static void main(String arguments) {",
+            "⑥": "System.out.println(args[x]);",
+            "⑦": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "3",
+          "answer": "③",
           "notes": ""
         },
         {
@@ -146,15 +146,15 @@
           "question_type": "排序",
           "sub_question": "第二個程式碼片段應為何？",
           "options": {
-            "1": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "2": "System.out.println(arguments[x]);",
-            "3": "public static void main(String[] args) {",
-            "4": "for (int x = 1; x <= arguments.length; x++) {",
-            "5": "public static void main(String arguments) {",
-            "6": "System.out.println(args[x]);",
-            "7": "for (int x = 0; x < args.length; x++) {"
+            "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
+            "②": "System.out.println(arguments[x]);",
+            "③": "public static void main(String[] args) {",
+            "④": "for (int x = 1; x <= arguments.length; x++) {",
+            "⑤": "public static void main(String arguments) {",
+            "⑥": "System.out.println(args[x]);",
+            "⑦": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "7",
+          "answer": "⑦",
           "notes": ""
         },
         {
@@ -162,15 +162,15 @@
           "question_type": "排序",
           "sub_question": "第三個程式碼片段應為何？",
           "options": {
-            "1": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "2": "System.out.println(arguments[x]);",
-            "3": "public static void main(String[] args) {",
-            "4": "for (int x = 1; x <= arguments.length; x++) {",
-            "5": "public static void main(String arguments) {",
-            "6": "System.out.println(args[x]);",
-            "7": "for (int x = 0; x < args.length; x++) {"
+            "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
+            "②": "System.out.println(arguments[x]);",
+            "③": "public static void main(String[] args) {",
+            "④": "for (int x = 1; x <= arguments.length; x++) {",
+            "⑤": "public static void main(String arguments) {",
+            "⑥": "System.out.println(args[x]);",
+            "⑦": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "6",
+          "answer": "⑥",
           "notes": ""
         }
       ]
