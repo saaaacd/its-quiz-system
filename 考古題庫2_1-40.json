@@ -122,8 +122,8 @@
       "question_bank": "考古題庫2",
       "big_question_id": "EXAM2-004",
       "big_question_number": 4,
-      "big_question_title": "您正在面試某份工作。主考官要求您建立一個簡易的主控台程式：自命令列接受多個引數，並以使用者在命令列上所輸入的相同順序在畫面上輸出引數。請問應依序使用哪些三個程式碼片段？",
-      "shared_code_context": "程式碼片段：\n① for (int x = 1; x <= Integer.parseInt(args[0]); x++) {\n②     System.out.println(arguments[x]);\n   }\n}\n③ public static void main(String[] args) {\n④ for (int x = 1; x <= arguments.length; x++) {\n⑤ public static void main(String arguments) {\n⑥     System.out.println(args[x]);\n   }\n}\n⑦ for (int x = 0; x < args.length; x++) {",
+      "big_question_title": "您正在面試某份工作。主考官要求您建立一個簡易的主控台程式：自命令列接受多個引數，並以使用者在命令列上所輸入的相同順序在畫面上輸出引數。請問應依序使用哪些三個程式碼片段？\n\n程式碼片段：\n① for (int x = 1; x <= Integer.parseInt(args[0]); x++) {\n②     System.out.println(arguments[x]);\n   }\n}\n③ public static void main(String[] args) {\n④ for (int x = 1; x <= arguments.length; x++) {\n⑤ public static void main(String arguments) {\n⑥     System.out.println(args[x]);\n   }\n}\n⑦ for (int x = 0; x < args.length; x++) {",
+      "shared_code_context": "",
       "sub_questions": [
         {
           "sub_question_number": 1,
@@ -138,7 +138,7 @@
             "6": "System.out.println(args[x]);",
             "7": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "③",
+          "answer": "3",
           "notes": ""
         },
         {
@@ -154,7 +154,7 @@
             "6": "System.out.println(args[x]);",
             "7": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "⑦",
+          "answer": "7",
           "notes": ""
         },
         {
@@ -170,7 +170,7 @@
             "6": "System.out.println(args[x]);",
             "7": "for (int x = 0; x < args.length; x++) {"
           },
-          "answer": "⑥",
+          "answer": "6",
           "notes": ""
         }
       ]
@@ -830,17 +830,6 @@
           },
           "answer": "①",
           "notes": ""
-        },
-        {
-          "sub_question_number": 3,
-          "question_type": "填空",
-          "sub_question": "C 空格應填入何者？",
-          "options": {
-            "①": "未顯示",
-            "②": "未顯示"
-          },
-          "answer": "②",
-          "notes": "截圖左欄顯示 C 的答案為 ②，但題目區未完整顯示 C 空格。"
         }
       ],
       "notes": "第 20 題截圖下方可能有缺漏，已依可見答案欄 A:②、B:①、C:② 記錄。"
