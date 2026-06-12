@@ -279,16 +279,38 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
-        questionContainer.innerHTML = `
-            <div class="q-layout-single">
-                <div class="q-instruction">
-                    <p class="big-q-title">${escapeHtml(page.bigTitle)}</p>
-                    ${isMultiChoice && !isFillInBlank ? '<p class="note">提示：部分題目可能有多個正確答案，請選擇所有正確的選項。</p>' : ''}
+        // Use split layout when there's code AND multiple sub-questions (non-fill-in-blank)
+        const useSplitLayout = codeHtml && page.subQuestions.length > 1 && !isFillInBlank;
+
+        if (useSplitLayout) {
+            questionContainer.innerHTML = `
+                <div class="q-layout-single">
+                    <div class="q-instruction">
+                        <p class="big-q-title">${escapeHtml(page.bigTitle)}</p>
+                        ${isMultiChoice && !isFillInBlank ? '<p class="note">提示：部分題目可能有多個正確答案，請選擇所有正確的選項。</p>' : ''}
+                    </div>
+                    <div class="q-split-layout">
+                        <div class="q-split-code">
+                            ${codeHtml}
+                        </div>
+                        <div class="q-split-answers">
+                            ${answerAreaHtml}
+                        </div>
+                    </div>
                 </div>
-                ${codeHtml}
-                ${answerAreaHtml}
-            </div>
-        `;
+            `;
+        } else {
+            questionContainer.innerHTML = `
+                <div class="q-layout-single">
+                    <div class="q-instruction">
+                        <p class="big-q-title">${escapeHtml(page.bigTitle)}</p>
+                        ${isMultiChoice && !isFillInBlank ? '<p class="note">提示：部分題目可能有多個正確答案，請選擇所有正確的選項。</p>' : ''}
+                    </div>
+                    ${codeHtml}
+                    ${answerAreaHtml}
+                </div>
+            `;
+        }
 
         // Attach drag and drop listeners
         if (isDragDrop) {

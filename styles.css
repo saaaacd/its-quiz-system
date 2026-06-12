@@ -235,6 +235,27 @@ pre, code {
     flex-direction: column;
 }
 
+/* Side-by-side layout: code left, answers right */
+.q-split-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-top: 4px;
+}
+
+.q-split-code {
+    flex: 1 1 55%;
+    min-width: 0;
+    position: sticky;
+    top: 16px;
+    align-self: flex-start;
+}
+
+.q-split-answers {
+    flex: 1 1 45%;
+    min-width: 0;
+}
+
 /* Code Viewer */
 .code-viewer {
     background-color: var(--code-bg);
@@ -599,6 +620,14 @@ pre, code {
 
     .q-layout-single {
         padding: 20px;
+    }
+
+    .q-split-layout {
+        flex-direction: column;
+    }
+
+    .q-split-code {
+        position: static;
     }
 
     .footer-left {
