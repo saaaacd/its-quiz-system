@@ -359,8 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Not checked yet
                 btnCheck.style.display = 'inline-block';
-                btnNext.style.display = 'none';
-                btnSubmit.style.display = 'none';
+                if (isLastPage) {
+                    btnNext.style.display = 'none';
+                    btnSubmit.style.display = 'inline-block';
+                } else {
+                    btnNext.style.display = 'inline-block';
+                    btnSubmit.style.display = 'none';
+                }
             }
         } else {
             // Exam Mode
