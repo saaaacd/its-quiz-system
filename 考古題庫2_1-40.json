@@ -122,20 +122,20 @@
       "question_bank": "考古題庫2",
       "big_question_id": "EXAM2-004",
       "big_question_number": 4,
-      "big_question_title": "您正在面試某份工作。主考官要求您建立一個簡易的主控台程式：自命令列接受多個引數，並以使用者在命令列上所輸入的相同順序在畫面上輸出引數。請問應依序使用哪些三個程式碼片段？\n\n程式碼片段：\n① for (int x = 1; x <= Integer.parseInt(args[0]); x++) {\n②     System.out.println(arguments[x]);\n   }\n}\n③ public static void main(String[] args) {\n④ for (int x = 1; x <= arguments.length; x++) {\n⑤ public static void main(String arguments) {\n⑥     System.out.println(args[x]);\n   }\n}\n⑦ for (int x = 0; x < args.length; x++) {",
-      "shared_code_context": "",
+      "big_question_title": "您正在面試某份工作。主考官要求您建立一個簡易的主控台程式：自命令列接受多個引數，並以使用者在命令列上所輸入的相同順序在畫面上輸出引數。請問應依序使用哪三個程式碼片段？請拖曳正確的選項到對應的空格中。",
+      "shared_code_context": "程式碼應依序排列如下：\n\n第一段：①\n第二段：②\n第三段：③",
       "sub_questions": [
         {
           "sub_question_number": 1,
           "question_type": "排序",
-          "sub_question": "第一個程式碼片段應為何？",
+          "sub_question": "第一段應為何？",
           "options": {
             "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "②": "System.out.println(arguments[x]);",
+            "②": "System.out.println(arguments[x]); } }",
             "③": "public static void main(String[] args) {",
             "④": "for (int x = 1; x <= arguments.length; x++) {",
             "⑤": "public static void main(String arguments) {",
-            "⑥": "System.out.println(args[x]);",
+            "⑥": "System.out.println(args[x]); } }",
             "⑦": "for (int x = 0; x < args.length; x++) {"
           },
           "answer": "③",
@@ -144,14 +144,14 @@
         {
           "sub_question_number": 2,
           "question_type": "排序",
-          "sub_question": "第二個程式碼片段應為何？",
+          "sub_question": "第二段應為何？",
           "options": {
             "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "②": "System.out.println(arguments[x]);",
+            "②": "System.out.println(arguments[x]); } }",
             "③": "public static void main(String[] args) {",
             "④": "for (int x = 1; x <= arguments.length; x++) {",
             "⑤": "public static void main(String arguments) {",
-            "⑥": "System.out.println(args[x]);",
+            "⑥": "System.out.println(args[x]); } }",
             "⑦": "for (int x = 0; x < args.length; x++) {"
           },
           "answer": "⑦",
@@ -160,14 +160,14 @@
         {
           "sub_question_number": 3,
           "question_type": "排序",
-          "sub_question": "第三個程式碼片段應為何？",
+          "sub_question": "第三段應為何？",
           "options": {
             "①": "for (int x = 1; x <= Integer.parseInt(args[0]); x++) {",
-            "②": "System.out.println(arguments[x]);",
+            "②": "System.out.println(arguments[x]); } }",
             "③": "public static void main(String[] args) {",
             "④": "for (int x = 1; x <= arguments.length; x++) {",
             "⑤": "public static void main(String arguments) {",
-            "⑥": "System.out.println(args[x]);",
+            "⑥": "System.out.println(args[x]); } }",
             "⑦": "for (int x = 0; x < args.length; x++) {"
           },
           "answer": "⑥",
