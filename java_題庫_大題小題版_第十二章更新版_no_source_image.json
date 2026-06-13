@@ -614,40 +614,40 @@
         "big_question_id": "CH3-003",
         "big_question_number": 3,
         "big_question_title": "你正在面試 JAVA 開發人員的工作，需呈現你對選擇敘述的能力。下列程式碼片段是否能夠正確區分成三種狀態，請填「是」或「否」。",
-        "shared_code_context": "if (ages >= 25) {\n    off = 0.50;\n} else if (ages >= 21) {\n    off = 0.25;\n} else {\n    off = 0.0;\n}",
+        "shared_code_context": "片段一：\nif (ages >= 25) {\n    off = 0.50;\n} else if (ages >= 21) {\n    off = 0.25;\n} else {\n    off = 0.0;\n}\n\n片段二：\nif (level == \"甲\") {\n    msg = \"表現超群\";\n} else if (level == \"乙\") {\n    msg = \"表現正常\";\n} else {\n    msg = \"再接再厲\";\n}\n\n片段三：\nif (grade == 4.0) {\n    series = 1;\n} else if (grade >= 3.0) {\n    series = 2;\n} else if (grade >= 2.5) {\n    series = 3;\n}",
         "sub_questions": [
           {
             "id": "CH3-003-1",
             "sub_question_number": 1,
-            "question": "下列程式碼片段是否能夠正確區分成三種狀態？請判斷第 ① 段。",
+            "question": "片段一是否能夠正確區分成三種狀態？",
             "options": {
               "A": "是",
               "B": "否"
             },
             "answer": "A",
-            "notes": "條件由大到小判斷，且最後有 else 處理其他年齡，可分成三種狀態。"
+            "notes": "條件由大到小判斷，最後以 else 涵蓋所有其他年齡，能正確區分三種狀態。"
           },
           {
             "id": "CH3-003-2",
             "sub_question_number": 2,
-            "question": "下列程式碼片段是否能夠正確區分成三種狀態？請判斷第 ② 段。",
+            "question": "片段二是否能夠正確區分成三種狀態？",
             "options": {
               "A": "是",
               "B": "否"
             },
-            "answer": "B",
-            "notes": "Java 比較字串內容通常應使用 equals()，不應用 == 比較字串內容。"
+            "answer": "A",
+            "notes": "以 if / else if / else 三個分支分別處理「甲」、「乙」及其他，能正確區分三種狀態。"
           },
           {
             "id": "CH3-003-3",
             "sub_question_number": 3,
-            "question": "下列程式碼片段是否能夠正確區分成三種狀態？請判斷第 ③ 段。",
+            "question": "片段三是否能夠正確區分成三種狀態？",
             "options": {
               "A": "是",
               "B": "否"
             },
             "answer": "B",
-            "notes": "少了 else 處理 grade < 2.5 的情況，因此不能完整處理狀態。"
+            "notes": "最後一個條件是 else if (grade >= 2.5)，當 grade < 2.5（如 grade=2.0）時不會被任何分支處理，因此無法正確區分三種狀態。若改為 else 則正確。"
           }
         ]
       },
