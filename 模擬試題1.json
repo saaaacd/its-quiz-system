@@ -130,7 +130,7 @@
       "big_question_id": "EXAM1-005",
       "big_question_number": 5,
       "big_question_title": "請選擇適當值作為下列程式碼片段的值。每個值可能使用一次或多次，甚至完全不用。",
-      "shared_code_context": "A. (3 + 2) * 4 - 1",
+      "shared_code_context": "A. (3 + 2) * 4 - 1\nB. 4 * 4 + 2 * 5\nC. 8 * 2 % 3\nD. 5 / 2 - 6 % 2",
       "sub_questions": [
         {
           "sub_question_number": 1,
