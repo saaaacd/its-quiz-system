@@ -6,7 +6,37 @@
 // ============================================
 // Exam Catalog — mapped to JSON chapters
 // ============================================
+// All chapter definitions for the review feature
+const allChapterDefs = [
+    { id: 'ch1',   key: '第一章',   label: 'Java 第一章 — 基礎語法與註解',          questionCount: 2  },
+    { id: 'ch2',   key: '第二章',   label: 'Java 第二章 — 資料型別與運算',          questionCount: 10 },
+    { id: 'ch3',   key: '第三章',   label: 'Java 第三章 — 控制敘述（選擇）',        questionCount: 6  },
+    { id: 'ch4',   key: '第四章',   label: 'Java 第四章 — 控制敘述（迴圈）',        questionCount: 6  },
+    { id: 'ch5',   key: '第五章',   label: 'Java 第五章 — 陣列',                   questionCount: 6  },
+    { id: 'ch6',   key: '第六章',   label: 'Java 第六章 — 方法',                   questionCount: 5  },
+    { id: 'ch7',   key: '第七章',   label: 'Java 第七章 — 類別與物件',              questionCount: 7  },
+    { id: 'ch8',   key: '第八章',   label: 'Java 第八章 — 繼承與多型',              questionCount: 6  },
+    { id: 'ch9',   key: '第九章',   label: 'Java 第九章 — 介面與抽象類別',          questionCount: 7  },
+    { id: 'ch10',  key: '第十章',   label: 'Java 第十章 — 例外處理',               questionCount: 6  },
+    { id: 'ch11',  key: '第十一章', label: 'Java 第十一章 — 檔案處理',             questionCount: 3  },
+    { id: 'ch12',  key: '第十二章', label: 'Java 第十二章 — 集合框架',             questionCount: 4  },
+    { id: 'exam1', key: '模擬試題1', label: '模擬試題 1 — Java ITS 考古題',         questionCount: 40 },
+    { id: 'exam2', key: '考古題庫2', label: '模擬試題 2 — Java ITS 考古題',         questionCount: 40 },
+];
+
 const examCatalog = [
+    {
+        id: 'review',
+        title: '🔖 總複習 — 自選章節混合練習',
+        difficulty: 'custom',
+        difficultyLabel: '自訂',
+        questionCount: null,
+        subQuestionCount: null,
+        timeMinutes: null,
+        type: 'Java ITS',
+        date: '2026-6-13',
+        topics: '自由選擇任意章節，合併所有題目一次複習',
+    },
     {
         id: 'exam1',
         title: '📌 模擬試題 1 — Java ITS 考古題',
@@ -192,18 +222,24 @@ function renderExamList() {
     const list = document.getElementById('exam-list');
     if (!list) return;
 
-    list.innerHTML = examCatalog.map(exam => `
-        <div class="exam-row" onclick="startExam('${exam.id}')">
+    list.innerHTML = examCatalog.map(exam => {
+        const isReview = exam.id === 'review';
+        const metaText = isReview
+            ? '<span class="exam-row-questions" style="color: var(--accent-blue);">自選章節</span>'
+            : `<span class="exam-row-questions">${exam.questionCount} 大題 / ${exam.subQuestionCount} 小題</span>`;
+        const rowStyle = isReview ? ' style="border-left: 4px solid var(--accent-blue);"' : '';
+        return `
+        <div class="exam-row"${rowStyle} onclick="startExam('${exam.id}')">
             <div class="exam-row-main">
                 <div class="exam-row-title">${exam.title}</div>
                 <div class="exam-row-topics" style="margin-top: 8px;">${exam.topics}</div>
             </div>
             <div class="exam-row-meta">
-                <span class="exam-row-questions">${exam.questionCount} 大題 / ${exam.subQuestionCount} 小題</span>
-                <span class="exam-row-action">進入考試 <span class="arrow">→</span></span>
+                ${metaText}
+                <span class="exam-row-action">${isReview ? '選擇章節' : '進入考試'} <span class="arrow">→</span></span>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 }
 
 // ============================================
@@ -212,9 +248,13 @@ function renderExamList() {
 let pendingExamId = null;
 
 function startExam(examId) {
-    pendingExamId = examId;
-    const modal = document.getElementById('mode-modal');
-    if (modal) modal.style.display = 'flex';
+    if (examId === 'review') {
+        openChapterModal();
+    } else {
+        pendingExamId = examId;
+        const modal = document.getElementById('mode-modal');
+        if (modal) modal.style.display = 'flex';
+    }
 }
 
 function closeModeModal() {
@@ -226,8 +266,65 @@ function closeModeModal() {
 function startExamWithMode(mode) {
     if (pendingExamId) {
         const shuffle = document.getElementById('shuffle-checkbox').checked ? '1' : '0';
-        window.location.href = `quiz.html?exam=${pendingExamId}&mode=${mode}&shuffle=${shuffle}`;
+        if (pendingExamId === 'review') {
+            const selected = getSelectedChapterIds();
+            window.location.href = `quiz.html?exam=review&chapters=${selected.join(',')}&mode=${mode}&shuffle=${shuffle}`;
+        } else {
+            window.location.href = `quiz.html?exam=${pendingExamId}&mode=${mode}&shuffle=${shuffle}`;
+        }
     }
+}
+
+// ============================================
+// Chapter Selection Modal (總複習)
+// ============================================
+function openChapterModal() {
+    const checklist = document.getElementById('chapter-checklist');
+    if (!checklist) return;
+
+    checklist.innerHTML = allChapterDefs.map(ch => `
+        <label class="chapter-check-row" style="display:flex; align-items:center; gap:12px; padding:10px 14px; background:var(--bg-white); border:1px solid var(--border-color); border-radius:var(--radius-md); cursor:pointer; user-select:none;" onclick="updateReviewSummary()">
+            <input type="checkbox" class="chapter-checkbox" data-id="${ch.id}" data-count="${ch.questionCount}" style="width:17px; height:17px; cursor:pointer;">
+            <span style="flex:1; font-size:14px; color:var(--text-primary);">${ch.label}</span>
+            <span style="font-size:12px; color:var(--text-secondary); white-space:nowrap;">${ch.questionCount} 大題</span>
+        </label>
+    `).join('');
+
+    updateReviewSummary();
+    const modal = document.getElementById('chapter-modal');
+    if (modal) modal.style.display = 'flex';
+}
+
+function closeChapterModal() {
+    const modal = document.getElementById('chapter-modal');
+    if (modal) modal.style.display = 'none';
+}
+
+function selectAllChapters(checked) {
+    document.querySelectorAll('.chapter-checkbox').forEach(cb => cb.checked = checked);
+    updateReviewSummary();
+}
+
+function getSelectedChapterIds() {
+    return Array.from(document.querySelectorAll('.chapter-checkbox:checked')).map(cb => cb.dataset.id);
+}
+
+function updateReviewSummary() {
+    const checkboxes = document.querySelectorAll('.chapter-checkbox:checked');
+    const totalQ = Array.from(checkboxes).reduce((s, cb) => s + parseInt(cb.dataset.count), 0);
+    const summary = document.getElementById('chapter-summary');
+    if (summary) summary.textContent = `已選 ${checkboxes.length} 個章節，共約 ${totalQ} 大題`;
+    const btn = document.getElementById('btn-proceed-review');
+    if (btn) btn.disabled = checkboxes.length === 0;
+}
+
+function proceedToModeFromReview() {
+    const selected = getSelectedChapterIds();
+    if (selected.length === 0) return;
+    closeChapterModal();
+    pendingExamId = 'review';
+    const modal = document.getElementById('mode-modal');
+    if (modal) modal.style.display = 'flex';
 }
 
 // ============================================

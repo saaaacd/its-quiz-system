@@ -36,13 +36,34 @@ document.addEventListener('DOMContentLoaded', () => {
         'exam2': '考古題庫2',
     };
 
-    const chapterKey = chapterMap[examId];
-    if (chapterKey && data.chapters[chapterKey]) {
-        chapterQuestions = data.chapters[chapterKey];
+    // --- Load chapter questions (single or multi-chapter review) ---
+    if (examId === 'review') {
+        const chapterIds = (params.get('chapters') || '').split(',').filter(Boolean);
+        if (chapterIds.length === 0) {
+            document.getElementById('question-container').innerHTML =
+                '<div style="padding:48px;text-align:center;color:#888;">未選擇任何章節，請返回首頁重新選擇。</div>';
+            return;
+        }
+        chapterIds.forEach(id => {
+            const key = chapterMap[id];
+            if (key && data.chapters[key]) {
+                chapterQuestions = chapterQuestions.concat(data.chapters[key]);
+            }
+        });
+        if (chapterQuestions.length === 0) {
+            document.getElementById('question-container').innerHTML =
+                '<div style="padding:48px;text-align:center;color:#888;">找不到所選章節的題目資料。</div>';
+            return;
+        }
     } else {
-        document.getElementById('question-container').innerHTML =
-            '<div style="padding:48px;text-align:center;color:#888;">找不到該考卷的題目資料。</div>';
-        return;
+        const chapterKey = chapterMap[examId];
+        if (chapterKey && data.chapters[chapterKey]) {
+            chapterQuestions = data.chapters[chapterKey];
+        } else {
+            document.getElementById('question-container').innerHTML =
+                '<div style="padding:48px;text-align:center;color:#888;">找不到該考卷的題目資料。</div>';
+            return;
+        }
     }
 
     // --- Build flat question list from big_question / sub_questions ---

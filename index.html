@@ -79,6 +79,30 @@
         </section>
     </div>
 
+    <!-- Chapter Selection Modal (for 總複習) -->
+    <div id="chapter-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 560px; max-height: 90vh; overflow-y: auto;">
+            <h2 class="modal-title">📚 選擇複習章節</h2>
+            <p class="modal-desc">請勾選您想要一起複習的章節：</p>
+
+            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                <button class="btn-outline" onclick="selectAllChapters(true)" style="flex:1; font-size: 13px; padding: 6px 12px;">全選</button>
+                <button class="btn-outline" onclick="selectAllChapters(false)" style="flex:1; font-size: 13px; padding: 6px 12px;">全不選</button>
+            </div>
+
+            <div id="chapter-checklist" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <!-- Injected by home.js -->
+            </div>
+
+            <div id="chapter-summary" style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-md);">
+                已選 0 章節，共 0 大題
+            </div>
+
+            <button class="btn-primary-sm" onclick="proceedToModeFromReview()" id="btn-proceed-review" style="width: 100%; padding: 12px; font-size: 15px; border-radius: var(--radius-md);">下一步：選擇作答模式 →</button>
+            <button class="btn-outline modal-close" onclick="closeChapterModal()" style="margin-top: 10px; width: 100%;">取消</button>
+        </div>
+    </div>
+
     <!-- Mode Selection Modal -->
     <div id="mode-modal" class="modal-overlay" style="display: none;">
         <div class="modal-content">
